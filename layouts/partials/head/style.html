@@ -1,0 +1,7 @@
+<!-- {{ $sass := resources.Get "scss/style.scss" }}
+{{ $style := $sass | resources.ToCSS | postCSS | minify }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}"> -->
+{{ $styles := resources.Get "scss/style.scss" | toCSS | postCSS | minify }}
+<style>
+{{- $styles.Content | safeCSS -}}
+</style>

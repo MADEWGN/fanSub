@@ -1,0 +1,80 @@
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="apple-mobile-web-app-title" content="rmdhnreza.my.id - Kumpulan Tutorial Untuk Linux & Windows">
+<meta name="application-name" content="rmdhnreza.my.id - Kumpulan Tutorial Untuk Linux & Windows">
+
+{{ if .IsHome -}}
+{{- $description := partialCached "data/description" . .RelPermalink -}}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}",
+    "description": "{{ $description }}",
+    "thumbnailUrl": "{{ .Site.BaseURL }}/favicon.ico",
+    "license": "{{ default .Site.Params.article.license.default .Params.license }}",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ .Site.BaseURL }}/search/?keyword={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
+}
+
+</script>
+{{ else if .IsPage }}
+{{ $author :=  or (.Params.author) (.Site.Author.name) }}
+{{ $org_name :=  .Site.Title }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "name": "{{ .Title | safeJS }}",
+    "headline": "{{ .Title | safeJS }}",
+    "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
+    "inLanguage": {{ .Site.LanguageCode | default "id-id" }},
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "rmdhnreza"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "rmdhnreza"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "rmdhnreza"
+    },
+    "copyrightHolder" : "{{ $org_name }}",
+    "copyrightYear" : "{{ .Date.Format "2006" }}",
+    "dateCreated": "{{ .Date.Format "02-01-2006T15:04:05.00Z" | safeHTML }}",
+    "datePublished": "{{ .PublishDate.Format "02-01-2006T15:04:05.00Z" | safeHTML }}",
+    "dateModified": "{{ .Lastmod.Format "02-01-2006T15:04:05.00Z" | safeHTML }}",
+    "publisher":{
+        "@type":"Organization",
+        "name": {{ $org_name }},
+        "url": {{ .Site.BaseURL }},
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.BaseURL }}/favicon.ico",
+            "width":"48",
+            "height":"48"
+        },
+    },
+    "image": {{ .Params.thumbnail | relURL }},
+    "url" : "{{ .Permalink }}",
+    "wordCount" : "{{ .WordCount }}",
+    "tag" : [{{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}],
+    "keywords" : [{{ range $index, $keywords := .Params.keywords }}{{ if $index }}, {{ end }}"{{ $keywords }}" {{ end }}],
+    "articleSection": [{{ range $index, $categories := .Params.categories }}{{ if $index }}, {{ end }}"{{ $categories }}" {{ end }}],
+}
+</script>
+{{ end }}

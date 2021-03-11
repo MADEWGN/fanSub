@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.2"
+  },
+  "dependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "add-dependencies": "^1.1.0",
+    "postcss": "^8.2.7",
+    "postcss-cli": "^8.3.1"
+  }
+}

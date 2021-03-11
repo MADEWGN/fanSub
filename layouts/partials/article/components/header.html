@@ -1,0 +1,34 @@
+<header class="article-header">
+    <!-- {{- $image := partialCached "helper/image" (dict "Context" . "Type" "article") .RelPermalink "article" -}}
+    {{ if $image.exists }}
+        <div class="article-image">
+            <a href="{{ .RelPermalink }}">
+                {{ if $image.resource }}
+                    {{- $Permalink := $image.resource.RelPermalink -}}
+                    {{- $Width := $image.resource.Width -}}
+                    {{- $Height := $image.resource.Height -}}
+                    {{- $Srcset := "" -}}
+                    
+                    {{- if (default true .Page.Site.Params.imageProcessing.cover.enabled) -}}
+                        {{- $thumbnail := $image.resource.Resize "400x Center q75" -}}
+                        {{- $thumbnailRetina := $image.resource.Resize "800x Center q75" -}}
+                        {{- $Srcset = printf "%s 400w, %s 800w" $thumbnail.RelPermalink $thumbnailRetina.RelPermalink -}}
+                        {{- $Permalink = $thumbnail.RelPermalink -}}
+                        {{- $Width = $thumbnail.Width -}}
+                        {{- $Height = $thumbnail.Height -}}
+                    {{- end -}}
+
+                    <img src="{{ $Permalink }}"
+                        {{ with $Srcset }}srcset="{{ . }}"{{ end }}
+                        width="{{ $Width }}" 
+                        height="{{ $Height }}" 
+                        loading="lazy"
+                        alt="Cover {{ .Title }}" />
+                {{ else }}
+                    <img src="{{ $image.permalink }}" loading="lazy" alt="Thumbnail {{ .Title }}" />
+                {{ end }}
+            </a>
+        </div>
+    {{ end }} -->
+    {{ partialCached "article/components/details" . .RelPermalink }}
+</header>

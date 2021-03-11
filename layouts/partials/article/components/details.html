@@ -1,0 +1,18 @@
+<div class="article-details">
+    {{ if .Params.categories }}
+    <header class="article-time">
+    {{ partialCached "article/components/breadcrumbs" . .RelPermalink }}
+    </header>
+    {{ end }}
+    <h2 class="article-title">
+        <a href="{{ .RelPermalink }}">
+            {{- .Title -}}
+        </a>
+    </h2>
+
+    {{ with .Params.description }}
+    <h3 class="article-subtitle">
+        {{ . }}
+    </h3>
+    {{ end }}
+</div>

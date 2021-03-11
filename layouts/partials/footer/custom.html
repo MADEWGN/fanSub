@@ -1,0 +1,38 @@
+<script>
+  "rmdhnreza.web.app" != window.location.hostname && "rmdhnreza.firebaseapp.com" != window.location.hostname || (window.location.href = "https://rmdhnreza.my.id"), document.querySelectorAll("a").forEach((function(o) {
+    var a;
+      o.hash && (o.origin + o.pathname == self.location.href && (a = document.querySelector(o.hash)) && o.addEventListener("click", (function(o) {
+          a.scrollIntoView({
+              behavior: "smooth"
+          }), o.preventDefault()
+      }), !1))
+  }));
+  
+  document.querySelectorAll('.tab') ? 
+  document.querySelectorAll('.tab').forEach(function(elem, idx) {
+    var containerId = elem.getAttribute('id');
+    var containerElem = elem;
+    var tabLinks = elem.querySelectorAll('.tab__link');
+    var tabContents = elem.querySelectorAll('.tab__content');
+    var ids = [];
+
+    tabLinks && tabLinks.length > 0 ?
+    tabLinks.forEach(function(link, index, self) {
+      link.onclick = function(e) {
+        for (var i = 0; i < self.length; i++) {
+          if (index === parseInt(i, 10)) {
+            if (!self[i].classList.contains('active')) {
+              self[i].classList.add('active');
+              tabContents[i].style.display = 'block';
+            }
+          } else {
+            self[i].classList.remove('active');
+            tabContents[i].style.display = 'none';
+          }
+        }
+      }
+    }) : null;
+  }) : null;
+
+var hash = window.location.hash.slice(1);
+</script>
