@@ -3,7 +3,7 @@ toggleMenu:
 
 article:
     relatedContents:
-        other: Konten terkait
+        other: Konten Lainnya
     lastUpdatedOn:
         other: Terakhir diperbarui pada
 
@@ -16,7 +16,7 @@ notFound:
 widget:
     archives:
         title:
-            other: Arsip
+            other: Archives
         more:
             other: Lebih
     tagCloud:
@@ -24,7 +24,7 @@ widget:
             other: Tag
     categoriesCloud:
         title:
-            other: Kategori
+            other: Categories
 
 search:
     title:
