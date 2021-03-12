@@ -39,3 +39,7 @@ footer:
         other: Website ini dibuat menggunakan framework {{ .Generator }}
     designedBy:
         other: dengan tema {{ .Theme }} yang dirancang oleh {{ .DesignedBy }}
+
+video:
+    videoUnsupported:
+        other: "Jika video tidak bisa di play, kalian bisa <a  class=\"link\" href=\"{{ .RelPermalink }}\">download</a> dan menontonnya di video player favorit kalian!"

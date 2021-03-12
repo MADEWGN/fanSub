@@ -27,7 +27,7 @@ Tutorial disini saya menggunakan Desktop/Laptop, untuk Mobile saya kurang tahu, 
 6. Kalian play video nya, tunggu video nya sampai berjalan beberapa detik lalu tekan `X` pada keyboard kalian, maka video akan mempercepat sesuai dengan yang kalian setting tadi menjadi berapa detik.
 
 ### Video
-{{< spoiler text="Klik Untuk Membuka Spoiler" >}}
+{{< spoiler text=" Klik Untuk Membuka Spoiler" >}}
 
 {{< video src="video" >}}
 

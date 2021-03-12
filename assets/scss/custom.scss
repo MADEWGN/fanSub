@@ -75,6 +75,8 @@ ul.breadcrumb li a:hover {
 
 summary {
   cursor: pointer;
+  outline: auto;
+  text-indent: .8em;
 }
 
 .spoiler {
