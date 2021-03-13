@@ -31,10 +31,10 @@ sudo nano /etc/transmission-daemon/settings.json
 4. Ubah bagian yang kalian perlukan, disini saya hanya mengubah bagian ini saja, setelah selesai edit kalian bisa simpan dengan cara `CTRL + O` `Enter` `CTRL + X` untuk editor `nano`
 ```json
 {
-    "download-dir": "/home/rmdhnreza/Downloads", // <-- Ubah direktori download torrent nya sesuai keinginan kalian
-    "rpc-authentication-required": true, // <-- Ubah ke false jika kalian tidak ingin menggunakan username/password untuk Login
+    "download-dir": "/home/rmdhnreza/Downloads", // <- Ubah direktori download torrent nya sesuai keinginan kalian
+    "rpc-authentication-required": true, // <- Ubah ke false jika kalian tidak ingin menggunakan username/password untuk Login
     "rpc-password": "rmdhnreza", // <- Password untuk login, jika  "rpc-authentication-required": true
-    "rpc-port": 9091, // <-- Port bisa kalian ubah sesuai keigininan kalian, asal port nya belum terpakai oleh aplikasi lain
+    "rpc-port": 9091, // <- Port bisa kalian ubah sesuai keigininan kalian, asal port nya belum terpakai oleh aplikasi lain
     "rpc-url": "/rmdhnreza/", // <- Ubah sesuai keinginan kalian, URL nya jadi seperti ini http://localhost:9091/rmdhnreza/web
     "rpc-username": "rmdhnreza", // <- Username untuk login, jika  "rpc-authentication-required": true
     "rpc-whitelist": "*", // <- Ubah dari 127.0.0.1 ke * 
