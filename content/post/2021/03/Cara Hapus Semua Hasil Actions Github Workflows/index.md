@@ -62,5 +62,5 @@ gh api repos/username/namarepo/actions/runs \
    - Jika kalian tidak ingin menghapus log workflows di branch `main` ganti `master` dengan `main`, begitupun sebaliknya! Perintah diatas **tidak menghapus** log workflows di branch `master`
 ![Hapus semua log workflows hasil github actions](gh-actions-5.jpg)
 
-5. Setelah kalian menjalankan perintahnya cek log workflows nya apakah sudah terhapus atau belum. jika belum kalian jalankan lagi saja perintahnya sampai semuanya terhapus
+5. Setelah kalian menjalankan perintahnya cek log workflows nya apakah sudah terhapus atau belum. Jika belum terhapus semua kalian jalankan lagi saja perintahnya sampai semuanya terhapus
 ![Install github-cli](gh-actions-6.jpg)
