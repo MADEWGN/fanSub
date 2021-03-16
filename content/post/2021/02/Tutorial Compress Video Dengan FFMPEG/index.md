@@ -1,6 +1,6 @@
 ---
 title: "Tutorial Compress Video Dengan FFMPEG"
-date: 2021-01-08T20:14:20+07:00
+date: 2021-03-15T20:14:20+07:00
 description: "Tutorial Compress Video Dengan FFMPEG di Linux dan Windows"
 categories: ["Linux", Windows, "Tutorial"]
 tags: ["Linux", Windows, "Tutorial"]
@@ -36,16 +36,18 @@ Jika kalian menggunakan snap bisa menggunakan perintah
 
 5. Perbedaan kecepatan compress menggunakan CPU dan GPU (*Hardware Accelerated*)
 
-AMD Phenom X4 955 BE @ 3.20GHz (4 Cores)  |  GPU NVIDIA GTX 750Ti
+![CPU](1.jpg) ![GPU](2.jpg)
 
-![CPU](ffmpeg-cpu.jpg) ![GPU](ffmpeg-gpu.jpg)
+6. Jika kalian ingin setting mengganti resolusi, bitrate audio & video nya kalian bisa menggunakan perintah
 
-6. Jika kalian ingin setting bitrate video nya kalian bisa menggunakan perintah
+CPU
 ```bash
- ffmpeg -hwaccel cuvid -c:v h264_cuvid -i input.mp4 -c:v h264_nvenc -cq 19 -b:v 512k -minrate 512k -maxrate 512k -bufsize 512k -c:a copy output.mp4
+ffmpeg -hide_banner -i input.mp4 -vf scale="854:480" -vcodec h264 -preset slow -b:v 512k -minrate 512k -maxrate 512k -bufsize 512k -profile:v high -c:a aac -ar 44100 -b:a 64k output.mp4
 ```
-`512k` bisa kalian ganti misalnya dengan `1024k` atau `1M`
+GPU
+```bash
+ffmpeg -hide_banner -c:v h264_cuvid -resize 854x480 -i 1080p.mp4 -c:v h264_nvenc -preset slow -b:v 512k -minrate 512k -maxrate 512k -bufsize 512k -profile:v high -c:a aac -ar 44100 -b:a 64k -cq:v 19 -movflags +faststart 540p.mkv
+```
+Perintah diatas mengubah resolusi menjadi 480p, bitrate audio menjadi 64k dan bitrate video menjadi 512k
 
-Menggunakan perintah langkah 4  | Menggunakan perintah langkah 6
-
-![CPU](ffmpeg-normal.jpg) ![GPU](ffmpeg-512k.jpg)
+![File size](3.jpg)
