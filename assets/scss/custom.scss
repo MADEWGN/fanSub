@@ -73,7 +73,7 @@ ul.breadcrumb li a:hover {
   margin: 1rem 0;
 }
 
-summary {
+summary, summary:focus, summary:active {
   cursor: pointer;
   outline: auto;
   text-indent: .8em;
