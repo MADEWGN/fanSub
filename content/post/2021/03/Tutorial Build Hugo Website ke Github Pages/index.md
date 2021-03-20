@@ -28,14 +28,14 @@ hugo new site --force rmdhnreza.github.io
 
 **Note:** argumen --force disini untuk memberi tahu hugo jika folder nya tidak kosong
 
-4. Masuk ke folder **root direktori** hugo kalian (rmdhnreza.github.io) dan tambahkan tema yang akan kalian pasang, disini saya menggunakan tema **Vanilla**, untuk menginstall tema yang kalian inginkan kalian lihat dokumentasi tema nya disini saya menggunakan perintah
+4. Masuk ke folder **root direktori** hugo kalian (rmdhnreza.gitlab.io) dan tambahkan tema yang akan kalian gunakan, disini saya menggunakan tema **Notepadium**, untuk memasang tema yang kalian inginkan kalian lihat dokumentasi tema nya.
 ```
 git submodule add https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme.git themes/vanilla-bootstrap-hugo-theme
 ```
 
 ![Menginstall Tema Vanilla](7.jpg)
 
-5. Copy isi folder dari exampleSite ke **root direktori** hugo website kalian, jangan lupa jika di **exampleSite** terdapat **config.yaml** maka kalian harus **hapus config.toml** di **root direktori** hugo website kalian, jika ada 2 config, kemungkinan besar akan error.
+5. Copy isi folder dari exampleSite ke **root direktori** hugo website kalian, jangan lupa jika di **exampleSite** terdapat **config.yaml** maka kalian harus **hapus config.toml** di **root direktori** hugo website kalian, begitupun sebaliknya. Karena jika ada 2 config, kemungkinan besar akan error.
 
 ![Hapus salah satu config](8.jpg)
 
