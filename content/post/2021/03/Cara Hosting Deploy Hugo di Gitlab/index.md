@@ -19,7 +19,7 @@ Pada kesempatan kali ini saya akan share tutorial hosting atau deploy website Hu
   - **Visibility Level** pilih **Public**
   - **Initialize repository with a README** kalian **ceklis**
 
-![Create a project](1.png) ![Create blank project](2.png) ![Project name](3.png) 
+![Create a project](1.jpg) ![Create blank project](2.jpg) ![Project name](3.jpg) 
 
 2. Clone repository atau project kalian, Karena disini saya menggunakan HTTPS, jadi gitlab meminta username dan password, jika kalian sudah setting **sshKeys** di Gitlab saya sarankan clone menggunakan SSH
 ```bash
@@ -30,7 +30,7 @@ git clone https://gitlab.com/rmdhnreza/rmdhnreza.gitlab.io.git
 hugo new site --force rmdhnreza.gitlab.io
 ```
 
-![Clone repository](4.png)  ![Buat hugo website](5.png)
+![Clone repository](4.jpg)  ![Buat hugo website](5.jpg)
 
 4. Masuk ke folder **root direktori** hugo kalian (rmdhnreza.gitlab.io) dan tambahkan tema yang akan kalian gunakan, disini saya menggunakan tema **Notepadium**, untuk setting-setting temanya kalian bisa lihat di dokumentasi tema nya.
 ```bash
@@ -38,15 +38,15 @@ git submodule add https://github.com/cntrump/hugo-notepadium.git themes/hugo-not
 ```
 5. Copy isi folder dari **tema/exampleSite** ke **root direktori** hugo website kalian, jangan lupa jika di **exampleSite** terdapat **config.yaml** maka kalian harus **hapus config.toml** di **root direktori** hugo website kalian, begitupun sebaliknya. Karena jika ada 2 config, kemungkinan besar akan error.
 
-![Copy isi exampleSite](6.png) ![Paste isi ExampleSite](7.png)
+![Copy isi exampleSite](6.jpg) ![Paste isi ExampleSite](7.jpg)
 
 6. Jika sudah gunakan perintah `hugo server` untuk menjalankannya secara local, saya asumsikan disini kalian tidak mendapati error.
 
-![Jalankan website secara lokal](9.png)
+![Jalankan website secara lokal](9.jpg)
 
 7. Edit **config.toml**, ganti **baseURL** nya menjadi **https://username.gitlab.io**
 
-![Edit baseURL](8.png)
+![Edit baseURL](8.jpg)
 
 8. Buat file baru dengan nama **.gitlab-ci.yml**, isikan konten berikut lalu Save
 ```yml
@@ -72,7 +72,7 @@ pages:
   - master
 ```
 
-![.github-ci.yml](10.png)
+![.github-ci.yml](10.jpg)
 
 8. Sekarang kita push ke Gitlab
 ```bash
@@ -83,8 +83,8 @@ git commit -m "Deploy Hugo ke Gitlab"
 git push origin master
 ```
 
-![Kita push ke Gitlab](11.png)
+![Kita push ke Gitlab](11.jpg)
 
 9. Tunggu beberapa saat sampai **https://username.gitlab.io** bisa diakses, pada saat tutorial ini dibuat dibawah 2 menit website yang saya hosting di Gitlab langsung bisa diakses
 
-![Project berhasil di Push](12.png) ![Tampilan Settings Pages](13.png) ![Tampilan website rmdhnreza.gitlab.io](14.png)
+![Project berhasil di Push](12.jpg) ![Tampilan Settings Pages](13.jpg) ![Tampilan website rmdhnreza.gitlab.io](14.jpg)
