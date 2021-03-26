@@ -132,7 +132,7 @@ textarea {
 }
 
 textarea:focus::placeholder {
-  opacity: 0.2;
+  opacity: var(--link-background-opacity) !important;
   transition: 0.5s !important;
 }
 
@@ -141,7 +141,7 @@ input {
 }
 
 input:focus::placeholder {
-  opacity: 0.2;
+  opacity: var(--link-background-opacity) !important;
   transition: 0.5s !important;
 }
 
@@ -175,7 +175,8 @@ input:focus::placeholder {
   height: 160px;
 }
 
-.vnick {
+.vnick,
+.vlink {
   font-weight: 700 !important;
 }
 
