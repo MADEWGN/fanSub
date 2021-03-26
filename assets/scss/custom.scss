@@ -1,5 +1,5 @@
 .center-text {
-  text-align: center
+  text-align: center;
 }
 
 .break-line {
@@ -8,25 +8,26 @@
 }
 
 .bold-text {
-  font-weight: 700
+  font-weight: 700;
 }
 
 .article-time svg {
-    margin-right: 0px;
-    stroke-width: 2.33px;
+  margin-right: 0px;
+  stroke-width: 2.33px;
 }
 
 .article-page .main-article .article-footer .article-tags {
   display: inline-block;
 }
 
-.article-category a, .article-tags a {
-    margin-right: 0px;
-    margin-bottom: 5px;
+.article-category a,
+.article-tags a {
+  margin-right: 0px;
+  margin-bottom: 5px;
 }
 
 .article-subtitle {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 ul.breadcrumb {
@@ -37,7 +38,7 @@ ul.breadcrumb li {
   display: inline;
   font-size: 18px;
 }
-ul.breadcrumb li+li:before {
+ul.breadcrumb li + li:before {
   padding: 2px;
   content: "";
 }
@@ -49,16 +50,16 @@ ul.breadcrumb li a:hover {
 }
 
 .article-time {
-    color: var(--card-text-color-tertiary);
-    margin-top: 10px;
+  color: var(--card-text-color-tertiary);
+  margin-top: 10px;
 }
 
 .article-page .main-article .article-content {
-    margin: 0;
+  margin: 0;
 }
 
 .article-content hr {
-    margin: 20px auto;
+  margin: 20px auto;
 }
 
 .pswp__caption__center {
@@ -69,17 +70,119 @@ ul.breadcrumb li a:hover {
   display: none;
 }
 
-.article-content>p {
+.article-content > p {
   margin: 1rem 0;
 }
 
 summary {
   cursor: pointer;
   outline: auto;
-  text-indent: .8em;
+  text-indent: 0.8em;
+}
+
+.v[data-class="v"] * {
+  font-family: Roboto !important;
+  color: var(--body-text-color) !important;
 }
 
 .spoiler {
   padding: 0 calc(var(--card-padding) - var(--heading-border-size));
-  border-left: var(--heading-border-size)solid var(--accent-color);
+  border-left: var(--heading-border-size) solid var(--accent-color);
+}
+
+.v[data-class="v"] .vinputs-area .auth-section .input-wrapper {
+  border-bottom: 1px solid rgba(126, 125, 125, 0.357) !important;
+  transition: 0.5s !important;
+}
+
+.v[data-class="v"] .vinputs-area .auth-section .input-wrapper:hover {
+  border-bottom: 1px solid var(--accent-color-link) !important;
+  transition: 0.5s !important;
+}
+
+.v[data-class="v"] .vinputs-wrap,
+.v[data-class="v"] .vinputs-wrap:hover {
+  border: 1px solid var(--card-text-color-main) !important;
+  transition: 0.5s !important;
+}
+
+.vnick,
+.vmail,
+.vlink {
+  color: var(--accent-color-link) !important;
+  transition: 0.5s !important;
+}
+
+.vnick:hover,
+.vmail:hover,
+.vlink:hover {
+  color: var(--accent-color-link) !important;
+  transition: 0.5s !important;
+}
+
+.vnick:focus,
+.vmail:focus,
+.vlink:focus {
+  color: var(--accent-color-link) !important;
+  transition: 0.5s !important;
+}
+
+textarea {
+  transition: 0.5s !important;
+}
+
+textarea:focus::placeholder {
+  opacity: 0.2;
+  transition: 0.5s !important;
+}
+
+input {
+  transition: 0.5s !important;
+}
+
+input:focus::placeholder {
+  opacity: 0.2;
+  transition: 0.5s !important;
+}
+
+.v[data-class="v"] .vinputs-area .textarea-wrapper textarea {
+  padding: 0.5rem;
+}
+
+.vicon {
+  fill: currentColor !important;
+}
+
+.v[data-class="v"] .vbtn {
+  border: none !important;
+  border-radius: var(--tag-border-radius) !important;
+  color: var(--accent-color-text) !important;
+  background-color: var(--accent-color) !important;
+  transition: background-color 0.5s ease !important;
+}
+
+.v[data-class="v"] .info::before {
+  border-top: none !important;
+}
+
+.v[data-class="v"] .vinputs-area .vextra-area .vsmile-icons {
+  border-top: none !important;
+  background: transparent !important;
+}
+
+.v[data-class="v"] .veditor {
+  resize: none !important;
+  height: 160px;
+}
+
+.vnick {
+  font-weight: 700 !important;
+}
+
+.vsys {
+  display: none !important;
+}
+
+.v[data-class="v"] .vwrap .vheader .vinput:focus {
+  border-bottom: 1px solid var(--card-text-color-main) !important;
 }

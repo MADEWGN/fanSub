@@ -38,7 +38,7 @@ rssFullContent = true
 
   [params.comments]
   enabled = true
-  provider = "disqus"
+  provider = "valine"
 
     [params.comments.utterances]
     issueTerm = "pathname"
@@ -125,3 +125,13 @@ noClasses = false
       unsafe = true
     [markup.goldmark.extensions]
       linkify = true
+
+# Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
+[params.valine]
+  enable = true
+  appId = "Y9oQNP8KiGORnFYVlAYXMyz8-MdYXbMMI"
+  appKey = "Nls4lGFA6b13yEb9ItK9wkzf"
+  placeholder = "Berikan Komentar (Support Format Markdown)"
+  visitor = true

@@ -1,0 +1,114 @@
+<div class="komentar">
+  <div id="valinejs">
+    <a
+      href="#"
+      class="comments-holder"
+      onclick="loadKomentar();return false;"
+      style="
+        color: var(--accent-color-text);
+        background-color: var(--accent-color);
+        padding: 8px 16px;
+        border-radius: var(--tag-border-radius);
+        font-size: 1.4rem;
+        transition: background-color 0.5s ease;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border: none;
+      "
+      >Klik untuk Berkomentar</a
+    >
+  </div>
+</div>
+
+<style>
+  .komentar {
+    background-color: var(--card-background);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-l1);
+    padding: var(--card-padding);
+  }
+</style>
+
+<script>
+  var is_disqus_loaded = false;
+  function loadKomentar() {
+    if (!is_disqus_loaded) {
+      function loadValine() {
+        setTimeout(function () {
+          var HEAD = document.getElementsByTagName("head")[0] || document.documentElement;
+          var src = "/js/valine.min.js";
+          var script = document.createElement("script");
+          script.setAttribute("type", "text/javascript");
+          script.onload = function () {
+            rmdhnrezaValine();
+          };
+          script.setAttribute("src", src);
+          HEAD.appendChild(script);
+        }, 1);
+      }
+      function rmdhnrezaValine() {
+        if (!document.querySelectorAll(".komentar")[0]) return;
+        var langName = "id",
+          langMode = {
+            nick: "Nama (Anonymous) - Optional",
+            mail: "E-Mail",
+            link: "Website (https://rmdhnreza.my.id) - Optional",
+            nickFail: "Nama tidak boleh kurang dari 4",
+            mailFail: "Mohon periksa E-Mail address nya !",
+            sofa: "Tidak ada Komentar",
+            submit: "Post",
+            reply: "Balas",
+            cancelReply: "Batalkan balasan",
+            comments: "Komentar",
+            cancel: "Batalkan",
+            confirm: "Konfirmasi",
+            continue: "Lanjutkan",
+            more: "Muat lebih banyak komentar ...",
+            preview: "Preview",
+            emoji: "Emoji",
+            expand: "Lihat lebih lanjut ...",
+            seconds: "detik yang lalu",
+            minutes: "menit yang lalu",
+            hours: "jam yang lalu",
+            days: "hari yang lalu",
+            now: "Baru saja",
+            uploading: "Mengunggah ...",
+            uploadDone: "Unggahan selesai !",
+            busy: "Server sedang sibuk, harap tunggu beberapa detik ... ",
+            "code-98": "Valine initialization failed, please check your version of av-min.js.",
+            "code-99": "Valine initialization failed, Please check the `el` element in the init method.",
+            "code-100": "Valine initialization failed, Please check your appId and appKey.",
+            "code-140": "The total number of API calls today has exceeded the development version limit.",
+            "code-401": "Unauthorized operation, Please check your appId and appKey.",
+            "code-403": "Access denied by API domain white list, Please check your security domain.",
+          };
+        new Valine({
+          appId: "Y9oQNP8KiGORnFYVlAYXMyz8-MdYXbMMI",
+          appKey: "Nls4lGFA6b13yEb9ItK9wkzf",
+          avatarForce: true,
+          avatar: "",
+          el: ".komentar",
+          enableFlag: false,
+          enableUA: false,
+          highlight: true,
+          lang: langName,
+          langMode: langMode,
+          meta: ["nick", "link"],
+          placeholder: "Berkomentarlah dengan sopan&#10;&#10;Komentar bisa menggunakan syntax Markdown",
+          recordIP: false,
+          requiredFields: [],
+        });
+      }
+      loadValine();
+      document.addEventListener("pjax:complete", function () {
+        rmdhnrezaValine();
+      });
+    }
+  }
+</script>
