@@ -1,6 +1,6 @@
 ---
 title: "Cara Install Oh My Zsh di Windows 10"
-date: 2021-03-20T00:33:19+07:00
+date: 2021-03-29T00:33:19+07:00
 description: "Cara Install Oh My Zsh di Windows 10"
 categories: ["Windows", "Tutorial"]
 tags: ["Windows", "Tutorial"]
