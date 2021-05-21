@@ -62,8 +62,7 @@
     }
 
     @media (max-width: $on-phone) {
-        padding: var(--small-card-padding);
-        width: 100%;
+        display: none;
     }
 }
 

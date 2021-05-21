@@ -155,7 +155,7 @@
         box-shadow: var(--shadow-l1);
         background-color: var(--card-background);
         padding: var(--small-card-padding);
-        margin: 2%;
+        margin: var(--small-card-padding);
 
         &.show {
             display: block;
@@ -180,7 +180,7 @@
         }
 
         @media (max-width: $on-phone) {
-            padding: 10px 30px;
+            padding: 5px 10px;
         }
 
         @media (min-width: $on-phone + 1) and (max-width: ($on-desktop - 1)) {
