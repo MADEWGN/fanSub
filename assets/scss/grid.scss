@@ -7,15 +7,16 @@
             max-width: 800px;
 
             .left-sidebar {
-                width: 25%;
+                width: 20%;
             }
         }
 
         @media (min-width: $on-tablet) {
-            max-width: 972px;
+            max-width: 1200px;
 
             .right-sidebar {
                 width: 25%;
+                flex-shrink: 0;
             }
         }
 
