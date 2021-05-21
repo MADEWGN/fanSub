@@ -86,7 +86,7 @@ scoop update *
 ```
 Setelah kalian mengupdate aplikasi via scoop, pastikan kalian menjalankan perintah dibawah ini untuk menghapus aplikasi versi sebelumnya
 ```powershell
-scoop cache rm *
+scoop cleanup *
 ```
 
 Untuk lebih lengkapnya tentang scoop ini kalian bisa langsung kunjungi [documentation nya di github](https://github.com/lukesampson/(wiki))
