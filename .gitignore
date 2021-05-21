@@ -95,6 +95,7 @@ dist
 .serverless/
 
 # Script
+push.bat
 push.sh
 
 # FuseBox cache
