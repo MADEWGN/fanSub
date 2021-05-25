@@ -1,189 +1,253 @@
 .center-text {
-  text-align: center;
+    text-align: center;
 }
 
 .break-line {
-  // margin: 0 0 1rem;
-  padding: 0 var(--card-padding);
+    // margin: 0 0 1rem;
+    padding: 0 var(--card-padding);
 }
 
 .bold-text {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .article-time svg {
-  margin-right: 0px;
-  stroke-width: 2.33px;
+    margin-right: 0px;
+    stroke-width: 2.33px;
 }
 
 .article-page .main-article .article-footer .article-tags {
-  display: inline-block;
+    display: inline-block;
 }
 
 .article-category a,
 .article-tags a {
-  margin-right: 0px;
-  margin-bottom: 5px;
+    margin-right: 0px;
+    margin-bottom: 5px;
 }
 
 .article-subtitle {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 ul.breadcrumb {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
+
 ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
+    display: inline;
+    font-size: 18px;
 }
-ul.breadcrumb li + li:before {
-  padding: 2px;
-  content: "";
+
+ul.breadcrumb li+li:before {
+    padding: 2px;
+    content: "";
 }
+
 ul.breadcrumb li a {
-  color: var(--accent-color-text);
+    color: var(--accent-color-text);
 }
+
 ul.breadcrumb li a:hover {
-  color: var(--accent-color-text);
+    color: var(--accent-color-text);
 }
 
 .article-time {
-  color: var(--card-text-color-tertiary);
-  margin-top: 10px;
+    color: var(--card-text-color-tertiary);
+    margin-top: 10px;
 }
 
 .article-page .main-article .article-content {
-  margin: 0;
+    margin: 0;
 }
 
 .article-content hr {
-  margin: 20px auto;
+    margin: 20px auto;
 }
 
 .pswp__caption__center {
-  text-align: center !important;
+    text-align: center !important;
 }
 
 .article-page .main-article .article-header .article-image img {
-  display: none;
+    display: none;
 }
 
-.article-content > p {
-  margin: 1rem 0;
+.article-content>p {
+    margin: 1rem 0;
 }
 
 summary {
-  cursor: pointer;
-  outline: auto;
-  text-indent: 0.8em;
+    cursor: pointer;
+    outline: auto;
+    text-indent: 0.8em;
 }
 
 .v[data-class="v"] * {
-  font-family: Roboto !important;
-  color: var(--body-text-color) !important;
+    font-family: Roboto !important;
+    color: var(--body-text-color) !important;
 }
 
 .spoiler {
-  padding: 0 calc(var(--card-padding) - var(--heading-border-size));
-  border-left: var(--heading-border-size) solid var(--accent-color);
+    padding: 0 calc(var(--card-padding) - var(--heading-border-size));
+    border-left: var(--heading-border-size) solid var(--accent-color);
 }
 
 .v[data-class="v"] .vinputs-area .auth-section .input-wrapper {
-  border-bottom: 1px solid rgba(126, 125, 125, 0.357) !important;
-  transition: 0.5s !important;
+    border-bottom: 1px solid rgba(126, 125, 125, 0.357) !important;
+    transition: 0.5s !important;
 }
 
 .v[data-class="v"] .vinputs-area .auth-section .input-wrapper:hover {
-  border-bottom: 1px solid var(--accent-color-link) !important;
-  transition: 0.5s !important;
+    border-bottom: 1px solid var(--accent-color-link) !important;
+    transition: 0.5s !important;
 }
 
 .v[data-class="v"] .vinputs-wrap,
 .v[data-class="v"] .vinputs-wrap:hover {
-  border: 1px solid var(--card-text-color-main) !important;
-  transition: 0.5s !important;
+    border: 1px solid var(--card-text-color-main) !important;
+    transition: 0.5s !important;
 }
 
 .vnick,
 .vmail,
 .vlink {
-  color: var(--accent-color-link) !important;
-  transition: 0.5s !important;
+    color: var(--accent-color-link) !important;
+    transition: 0.5s !important;
 }
 
 .vnick:hover,
 .vmail:hover,
 .vlink:hover {
-  color: var(--accent-color-link) !important;
-  transition: 0.5s !important;
+    color: var(--accent-color-link) !important;
+    transition: 0.5s !important;
 }
 
 .vnick:focus,
 .vmail:focus,
 .vlink:focus {
-  color: var(--accent-color-link) !important;
-  transition: 0.5s !important;
+    color: var(--accent-color-link) !important;
+    transition: 0.5s !important;
 }
 
 textarea {
-  transition: 0.5s !important;
+    transition: 0.5s !important;
 }
 
 textarea:focus::placeholder {
-  opacity: var(--link-background-opacity) !important;
-  transition: 0.5s !important;
+    opacity: var(--link-background-opacity) !important;
+    transition: 0.5s !important;
 }
 
 input {
-  transition: 0.5s !important;
+    transition: 0.5s !important;
 }
 
 input:focus::placeholder {
-  opacity: var(--link-background-opacity) !important;
-  transition: 0.5s !important;
+    opacity: var(--link-background-opacity) !important;
+    transition: 0.5s !important;
 }
 
 .v[data-class="v"] .vinputs-area .textarea-wrapper textarea {
-  padding: 0.5rem;
+    padding: 0.5rem;
 }
 
 .vicon {
-  fill: currentColor !important;
+    fill: currentColor !important;
 }
 
 .v[data-class="v"] .vbtn {
-  border: none !important;
-  border-radius: var(--tag-border-radius) !important;
-  color: var(--accent-color-text) !important;
-  background-color: var(--accent-color) !important;
-  transition: background-color 0.5s ease !important;
+    border: none !important;
+    border-radius: var(--tag-border-radius) !important;
+    color: var(--accent-color-text) !important;
+    background-color: var(--accent-color) !important;
+    transition: background-color 0.5s ease !important;
 }
 
 .v[data-class="v"] .info::before {
-  border-top: none !important;
+    border-top: none !important;
 }
 
 .v[data-class="v"] .vinputs-area .vextra-area .vsmile-icons {
-  border-top: none !important;
-  background: transparent !important;
+    border-top: none !important;
+    background: transparent !important;
 }
 
 .v[data-class="v"] .veditor {
-  resize: none !important;
-  height: 160px;
+    resize: none !important;
+    height: 160px;
 }
 
 .vnick,
 .vlink {
-  font-weight: 700 !important;
+    font-weight: 700 !important;
 }
 
 .vsys {
-  display: none !important;
+    display: none !important;
 }
 
 .v[data-class="v"] .vwrap .vheader .vinput:focus {
-  border-bottom: 1px solid var(--card-text-color-main) !important;
+    border-bottom: 1px solid var(--card-text-color-main) !important;
+}
+
+
+/* CSS Download Box by caramanual.com */
+.dbox-title {
+    padding: 8px 10px;
+    margin: 0px 0 2px;
+    color: #fff;
+    background: #3498db;
+}
+
+.dbox-wrap {
+    font-size: 12px;
+    font-weight: bold;
+    background: var(--download-box);
+    padding: 10px var(--card-padding);
+}
+
+.dbox {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dbox-list {
+    background: #E4E4E4;
+    margin-bottom: 2px;
+    line-height: 26px;
+    padding: 0 5px;
+}
+
+.dbox-list strong {
+    background: #3498db;
+    border-right: 2px solid #F5F5F5;
+    width: 65px;
+    display: block;
+    float: left;
+    margin-left: -5px;
+    margin-right: 5px;
+    color: #FFF;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.dbox-list a {
+    color: #6d6d6d;
+}
+
+.dbox-list a:hover {
+    color: #222;
+}
+
+@media only screen and (max-width: 360px) {
+    .dbox-list strong {
+        width: 100%
+    }
+
+    .dbox-title {
+        text-align: center
+    }
 }
