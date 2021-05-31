@@ -1,0 +1,14 @@
+{{- $file := .Get "file" | default (.Get 0) -}}
+{{- $size := .Get "size" | default (.Get 1) -}}
+{{- $type := .Get "link2" | default (.Get 2) }}
+{{- $version := .Get "version" | default (.Get 3) }}
+{{- $gdrive := .Get "gdrive" | default (.Get 4) }}
+{{- $gsharer := .Get "gsharer" | default (.Get 5) }}
+{{- $zippy := .Get "zippy" | default (.Get 6) }}
+<h2>Download {{ $file }}</h2>
+<p>Size: {{ $size }} MB | {{ $type }} | versi {{ $version }} </p>
+<ul>
+    <li><a class="link" href="{{ $gdrive }}" target="_blank" rel="nofollow noopener">{{ $file }} | via Google Drive</a></li>
+    <li><a class="link" href="{{ $gsharer }}" target="_blank" rel="nofollow noopener">{{ $file }} | via Google Sharer</a></li>
+    <li><a class="link" href="{{ $zippy }}" target="_blank" rel="nofollow noopener">{{ $file }} | via Zippyshare</a></li>
+</ul>

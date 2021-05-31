@@ -20,11 +20,12 @@ Camtasia 2021 Full Terbaru bagi kalian yang mencari software Camtasia 2021 terba
 
 Internet dipenuhi dengan tutorial dan semua jenis video di mana pengupload merekam beberapa aktivitas di desktop mereka, dan mungkin menjadi pertanyaan software apa yang mereka digunakan untuk membuat tutorial rekam tersebut. Solusi software yang powerfull yang dapat melakukan hal seperti itu salah satunya disebut Camtasia 2021 Terbaru ini.
 
-## Download Camtasia 2021 Full
-Size: 489 MB | zip | versi 2021
-* [Camtasia 2021 Full | via Google Drive](https://ouo.io/jkSrX5H)
-* [Camtasia 2021 Full | via Google Sharer](https://ouo.io/5B9jnJ)
-* [Camtasia 2021 Full | via Zippyshare](https://ouo.io/FDfu8H4)
+{{< download "Camtasia 2021 Full" 
+"489" "zip" "2021" 
+"https://ouo.io/jkSrX5H" 
+"https://ouo.io/5B9jnJ" 
+"https://ouo.io/FDfu8H4" 
+>}}
 
 ## Langkah Install
 
