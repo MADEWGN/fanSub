@@ -144,6 +144,7 @@ input:focus::placeholder {
 
 .spoiler {
     padding: 0 calc(var(--card-padding) - var(--heading-border-size));
+    margin: 1em var(--card-padding);
     // border-left: var(--heading-border-size) solid var(--accent-color);
 }
 
