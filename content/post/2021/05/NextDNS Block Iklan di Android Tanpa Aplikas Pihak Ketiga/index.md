@@ -1,6 +1,6 @@
 ---
 title: "Cara Menginstall NextDNS di Semua Perangkat"
-date: 2021-06-02T00:30:13+07:00
+date: 2021-05-30T00:30:13+07:00
 description: "Cara Menginstall NextDNS di Semua Perangkat, Cara Block Iklan di Android Tanpa root tanpa aplikasi pihak ketiga"
 categories: ["Tutorial","Android"]
 tags: ["Tutorial","Android"]

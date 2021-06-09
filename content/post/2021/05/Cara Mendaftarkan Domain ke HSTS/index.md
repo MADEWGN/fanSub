@@ -1,6 +1,6 @@
 ---
 title: "Cara Mendaftarkan Domain ke hstspreload.org"
-date: 2021-06-01T00:30:13+07:00
+date: 2021-05-31T00:30:13+07:00
 description: "Cara Mendaftarkan Domain ke HSTS Preload"
 categories: ["Tutorial"]
 tags: ["Tutorial"]
