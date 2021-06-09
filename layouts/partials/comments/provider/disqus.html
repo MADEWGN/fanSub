@@ -1,10 +1,6 @@
 <div class="disqus-container">
-  <div id="disqus_thread">
-    <a
-      href="#"
-      class="comments-holder"
-      onclick="loadDisqus();return false;"
-      style="
+    <div id="disqus_thread">
+        <a href="#/comments" class="comments-holder" onclick="loadDisqus();loadCount();return false;" style="
         color: var(--accent-color-text);
         background-color: var(--accent-color);
         padding: 8px 16px;
@@ -20,65 +16,56 @@
         transition-duration: 0.4s;
         cursor: pointer;
         border: none;
-      "
-      >Klik untuk Melihat Komentar</a
-    >
-  </div>
+      ">Click to View Comments</a>
+    </div>
 </div>
-
 <style>
-  .disqus-container {
+.disqus-container {
     background-color: var(--card-background);
     border-radius: var(--card-border-radius);
     box-shadow: var(--shadow-l1);
     padding: var(--card-padding);
-  }
+}
 </style>
-
 <script>
-  var disqus_shortname = "rmdhnreza";
-  var disqus_config = function () {
+var disqus_shortname = "rmdhnreza";
+var disqus_config = function() {
     this.page.url = '{{ trim .Permalink "/" }}';
     this.page.title = "{{ .Title }}";
     this.page.identifier = "{{ .File.UniqueID }}";
-  };
-  var is_disqus_loaded = false;
-  function loadDisqus() {
-    if (!is_disqus_loaded) {
-      function load_minivaline() {
-        setTimeout(function () {
-          var HEAD = document.getElementsByTagName("head")[0] || document.documentElement;
-          var src = "https://cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js";
-          var script = document.createElement("script");
-          script.setAttribute("type", "text/javascript");
-          script.onload = function () {
-            pjax_minivaline();
-          };
-          script.setAttribute("src", src);
-          HEAD.appendChild(script);
-        }, 1);
-      }
-      function pjax_minivaline() {
-        if (!document.querySelectorAll(".mvcomment")[0]) return;
-        new MiniValine({
-          el: ".mvcomment",
-          appId: "Y9oQNP8KiGORnFYVlAYXMyz8-MdYXbMMI",
-          appKey: "Nls4lGFA6b13yEb9ItK9wkzf",
-          placeholder: "Write a Comment O(∩_∩)O~~",
-        });
-      }
-      load_minivaline();
-      document.addEventListener("pjax:complete", function () {
-        pjax_minivaline();
-      });
-    }
-  }
+};
+var is_disqus_loaded = false;
 
-  window.addEventListener("onColorSchemeChange", (e) => {
-    if (is_disqus_loaded) {
-      DISQUS.reset({
-        reload: true,
-      });
+function loadDisqus() {
+    if (!is_disqus_loaded) {
+        is_disqus_loaded = true;
+        var d = document,
+            s = d.createElement("script");
+        s.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
     }
-  });
+}
+
+var is_count_loaded = false;
+
+function loadCount() {
+    if (!is_count_loaded) {
+        is_count_loaded = true;
+        var z = document,
+            o = d.createElement("script");
+        o.id = "dsq-count-scr";
+        o.src = "//" + disqus_shortname + ".disqus.com/count.js";
+        o.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+    }
+}
+
+window.addEventListener("onColorSchemeChange", (e) => {
+    if (is_disqus_loaded) {
+        DISQUS.reset({
+            reload: true,
+        });
+    }
+});
 </script>

@@ -38,7 +38,7 @@ rssFullContent = true
 
   [params.comments]
   enabled = true
-  provider = "valine"
+  provider = "disqus"
 
     [params.comments.utterances]
     issueTerm = "pathname"
