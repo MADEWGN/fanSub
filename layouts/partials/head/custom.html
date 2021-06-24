@@ -3,8 +3,8 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="apple-mobile-web-app-title" content="rmdhnreza.my.id - Kumpulan Tutorial Untuk Linux & Windows">
-<meta name="application-name" content="rmdhnreza.my.id - Kumpulan Tutorial Untuk Linux & Windows">
+<meta name="apple-mobile-web-app-title" content="rmdhnreza.my.id - Blog Tutorial For Linux & Windows">
+<meta name="application-name" content="rmdhnreza.my.id - Blog Tutorial For Linux & Windows">
 {{ if .IsHome -}}
 {{- $description := partialCached "data/description" . .RelPermalink -}}
 <script type="application/ld+json">
@@ -13,10 +13,10 @@
     "@type": "WebSite",
     "url": "{{ .Site.BaseURL }}",
     "name": "{{ .Site.Title }}",
-    "description": "Tempat Download Program dan Kumpulan Tutorial Seputar Teknologi",
+    "description": "Blog Tutorial For Linux & Windows",
     "thumbnailUrl": "{{ .Site.BaseURL }}/avatar.png",
     "license": "{{ default .Site.Params.article.license.default .Params.license }}",
-    "inLanguage": "id-ID",
+    "inLanguage": "en-US",
     "potentialAction": {
         "@type": "SearchAction",
         "target": "{{ .Site.BaseURL }}/search/?keyword={search_term_string}",
@@ -41,7 +41,7 @@
         "name": "{{ .Title | safeJS }}",
         "headline": "{{ .Title | safeJS }}",
         "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
-        "inLanguage":"id-ID",
+        "inLanguage":"en-US",
         "isFamilyFriendly": "true",
         "mainEntityOfPage": {
             "@type": "WebPage",

@@ -1,9 +1,9 @@
 baseurl = "https://rmdhnreza.my.id"
-languageCode = "id-id"
+languageCode = "en-us"
 theme = ["hugo-video", "hugo-theme-stack"]
 paginate = 13
 title = "rmdhnreza.my.id"
-DefaultContentLanguage = "id"
+DefaultContentLanguage = "en"
 ignoreErrors = "error-remote-getjson"
 googleAnalytics = "UA-180998806-1" # Enable Google Analytics by entering your tracking id
 enableRobotsTXT = true
@@ -27,7 +27,7 @@ rssFullContent = true
 
   [params.sidebar]
   # emoji = "🍥"
-  subtitle = "Kumpulan Tutorial Untuk Linux & Windows"
+  subtitle = "Blog Tutorial For Linux & Windows"
 
   [params.article]
   math = false
@@ -135,3 +135,12 @@ noClasses = false
   appKey = "Nls4lGFA6b13yEb9ItK9wkzf"
   placeholder = "Berikan Komentar (Support Format Markdown)"
   visitor = true
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+
+  [[module.mounts]]
+    source = "node_modules/simple-icons/icons"
+    target = "assets/simple-icons"
