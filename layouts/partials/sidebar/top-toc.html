@@ -1,0 +1,8 @@
+{{ if .Site.Params.widgets.enabled }}
+    {{ $context := . }}
+    <aside class="top-toc">
+        {{ range $widget := .Site.Params.widgets.enabled }}
+            {{ partial (printf "widget/%s" $widget) $context }}
+        {{ end }}
+    </aside>
+{{ end }}

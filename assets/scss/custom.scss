@@ -1,3 +1,168 @@
+.container.extended {
+    @include respond(vsm) {
+        max-width: 95%;
+    }
+
+    @include respond(sm) {
+        max-width: 95%;
+    }
+
+    @include respond(md) {
+        max-width: 95%;
+    }
+
+    @include respond(lg) {
+        max-width: 80%;
+    }
+
+    @include respond(xl) {
+        max-width: 80%;
+    }
+
+    @include respond(2xl) {
+        max-width: 80%;
+    }
+}
+
+
+.right-sidebar {
+    @include respond(vsm) {
+        display: none;
+    }
+
+    @include respond(sm) {
+        display: none;
+    }
+
+    @include respond(md) {
+        display: none;
+    }
+
+    @include respond(lg) {
+        display: block;
+    }
+
+    @include respond(xl) {
+        display: block;
+    }
+
+    @include respond(2xl) {
+        display: block;
+    }
+}
+
+.article-page.has-toc .main-container {
+    @include respond(vsm) {
+        flex-direction: column;
+    }
+
+    @include respond(sm) {
+        flex-direction: column;
+    }
+
+    @include respond(md) {
+        flex-direction: column;
+    }
+
+    @include respond(lg) {
+        flex-direction: row;
+    }
+
+    @include respond(xl) {
+        flex-direction: row;
+    }
+
+    @include respond(2xl) {
+        flex-direction: row;
+    }
+}
+
+.top-toc {
+    @include respond(vsm) {
+        display: block;
+        margin: 0 0 20px 0;
+    }
+
+    @include respond(sm) {
+        display: block;
+        margin: 0 0 20px 0;
+    }
+
+    @include respond(md) {
+        display: block;
+        margin: 0 0 20px 0;
+    }
+
+    @include respond(lg) {
+        display: none;
+    }
+
+    @include respond(xl) {
+        display: none;
+    }
+
+    @include respond(2xl) {
+        display: none;
+    }
+}
+
+.article-page.has-toc {
+    scroll-behavior: smooth;
+
+    .left-sidebar {
+        display: none;
+    }
+
+    .right-sidebar {
+        width: 100%;
+        padding: 0;
+        display: none;
+
+        @include respond(sm) {
+            display: block;
+        }
+
+        @include respond(lg) {
+            display: block;
+        }
+
+        @include respond(xl) {
+            display: block;
+        }
+
+        @include respond(2xl) {
+            display: block;
+        }
+    }
+}
+
+.title-toc {
+	display: flex;
+	align-items: center;
+	padding: 20px 0px 0px 25px;
+	text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--card-text-color-main);
+    background-color: var(--mobile-toc-background);
+}
+
+.mobile--widget--toc {
+	background-color: var(--mobile-toc-background);
+    display: flex;
+    flex-direction: column;
+    color: var(--card-text-color-main);
+}
+
+.mobile--widget--toc #TableOfContents li {
+    margin: 15px 20px;
+    padding: 5px;
+}
+
+#article-toolbar .back-home {
+    color: var(--body-text-color);
+}
+
 .article-category a,
 .article-tags a {
     margin-right: 0px;
@@ -13,7 +178,7 @@
 }
 
 .article-page .main-article .article-footer .article-tags {
-    display: inline-block;
+    display: none;
 }
 
 .article-page .main-article .article-header .article-image img {
@@ -25,7 +190,7 @@
 }
 
 .article-time {
-    color: var(--card-text-color-tertiary);
+    color: var(--card-text-color-secondary);
     margin-top: 10px;
 }
 

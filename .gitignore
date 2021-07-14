@@ -109,3 +109,12 @@ push.sh
 
 # Resources
 resources/
+
+# Update Submodule
+update-submodule.sh
+
+# Public
+public/
+
+# Resources
+resources/

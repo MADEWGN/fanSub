@@ -1,7 +1,20 @@
+{{ define "top-toc" }}
+    {{ if (.Scratch.Get "hasTOC") }}
+        <aside class="top-toc">
+            <section class="widget archives">
+                <h2 class="title-toc" style="margin: 20px 0 0 0">{{ T "article.tableOfContents" }}</h2>
+                <div class="mobile--widget--toc">
+                    {{ .TableOfContents }}
+                </div>
+            </section>
+        </aside>
+    {{ end }}
+{{ end }}
+
 <header class="article-header">
-    <!-- {{- $image := partialCached "helper/image" (dict "Context" . "Type" "article") .RelPermalink "article" -}}
+    {{- $image := partialCached "helper/image" (dict "Context" . "Type" "article") .RelPermalink "article" -}}
     {{ if $image.exists }}
-        <div class="article-image">
+        <div class="article-image" style="display:none;">
             <a href="{{ .RelPermalink }}">
                 {{ if $image.resource }}
                     {{- $Permalink := $image.resource.RelPermalink -}}
@@ -10,9 +23,9 @@
                     {{- $Srcset := "" -}}
                     
                     {{- if (default true .Page.Site.Params.imageProcessing.cover.enabled) -}}
-                        {{- $thumbnail := $image.resource.Resize "400x Center q75" -}}
-                        {{- $thumbnailRetina := $image.resource.Resize "800x Center q75" -}}
-                        {{- $Srcset = printf "%s 400w, %s 800w" $thumbnail.RelPermalink $thumbnailRetina.RelPermalink -}}
+                        {{- $thumbnail := $image.resource.Resize "800x" -}}
+                        {{- $thumbnailRetina := $image.resource.Resize "1600x" -}}
+                        {{- $Srcset = printf "%s 800w, %s 1600w" $thumbnail.RelPermalink $thumbnailRetina.RelPermalink -}}
                         {{- $Permalink = $thumbnail.RelPermalink -}}
                         {{- $Width = $thumbnail.Width -}}
                         {{- $Height = $thumbnail.Height -}}
@@ -23,12 +36,13 @@
                         width="{{ $Width }}" 
                         height="{{ $Height }}" 
                         loading="lazy"
-                        alt="Cover {{ .Title }}" />
+                        alt="Featured image of post {{ .Title }}" />
                 {{ else }}
-                    <img src="{{ $image.permalink }}" loading="lazy" alt="Thumbnail {{ .Title }}" />
+                    <img src="{{ $image.permalink }}" loading="lazy" alt="Featured image of post {{ .Title }}" />
                 {{ end }}
             </a>
         </div>
-    {{ end }} -->
+    {{ end }}
     {{ partialCached "article/components/details" . .RelPermalink }}
+    {{- block "top-toc" . -}}{{ end }}
 </header>

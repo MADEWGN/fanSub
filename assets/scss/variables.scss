@@ -1,13 +1,5 @@
-$defaultTagBackgrounds: #8ea885,
-#df7988,
-#0177b8,
-#ffb900,
-#6b69d6;
-$defaultTagColors: #fff,
-#fff,
-#fff,
-#fff,
-#fff;
+$defaultTagBackgrounds: #8ea885, #df7988, #0177b8, #ffb900, #6b69d6;
+$defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
 [data-scheme="light"] {
     --pre-text-color: #272822;
@@ -25,41 +17,36 @@ $defaultTagColors: #fff,
 *   Global style
 */
 :root {
-    @media (min-width: $on-phone + 1) {
+    @include respond(md) {
         --main-top-padding: 35px;
     }
 
-    @media (min-width: $on-desktop-large) {
+    @include respond(xl) {
         --main-top-padding: 50px;
     }
 
     --body-background: #f5f5fa;
 
     --accent-color: #34495e;
-    --accent-color-link: #34495e;
     --accent-color-darker: #2c3e50;
-    --accent-color-darker-button: #2c3e50;
     --accent-color-text: #fff;
-    --body-text-color: #535353;
-    --download-light: #d83f08;
-    --download-list: #e4e4e4;
-    --download-dark: #323639;
+    --body-text-color: #7f7f7f;
 
     --tag-border-radius: 4px;
 
     --section-separation: 40px;
 
-    [data-scheme="dark"] {
+    --scrollbar-thumb: hsl(0, 0%, 85%);
+    --scrollbar-track: var(--body-background);
+
+    &[data-scheme="dark"] {
         --body-background: #303030;
-        --accent-color: #774aca;
-        --accent-color-link: #fff;
-        --accent-color-darker: #fff;
-        --accent-color-darker-button: #ae81ff;
-        --accent-color-text: #fff;
+        --accent-color: #ecf0f1;
+        --accent-color-darker: #bdc3c7;
+        --accent-color-text: #000;
         --body-text-color: rgba(255, 255, 255, 0.7);
-        --download-light: #1a685e;
-        --download-list: #535353;
-        --download-dark: #323639;
+        --scrollbar-thumb: #424242;
+        --scrollbar-track: var(--body-background);
     }
 }
 
@@ -67,11 +54,11 @@ $defaultTagColors: #fff,
 *   Global font family
 */
 :root {
-    --sys-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue";
     --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
 
-    --base-font-family: system-ui, "Roboto", var(--sys-font-family), var(--zh-font-family), sans-serif;
-    --code-font-family: monospace;
+    --base-font-family: "Lato", var(--sys-font-family), var(--zh-font-family), sans-serif;
+    --code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 /*
@@ -83,36 +70,34 @@ $defaultTagColors: #fff,
 
     --card-text-color-main: #000;
     --card-text-color-secondary: #747474;
-    --card-text-color-tertiary: #535353;
+    --card-text-color-tertiary: #bababa;
     --card-separator-color: rgba(218, 218, 218, 0.5);
 
     --card-border-radius: 10px;
 
-    --card-padding: 30px;
-    --download-box: #f5f5f5;
+    --card-padding: 20px;
 
-    @media (max-width: $on-desktop-large) {
+    @include respond(md) {
         --card-padding: 25px;
     }
 
-    @media (max-width: $on-tablet) {
-        --card-padding: 20px;
+    @include respond(xl) {
+        --card-padding: 30px;
     }
 
-    --small-card-padding: 25px;
+    --small-card-padding: 25px 20px;
 
-    @media (max-width: $on-tablet) {
-        --small-card-padding: 25px 20px;
+    @include respond(md) {
+        --small-card-padding: 25px;
     }
 
-    [data-scheme="dark"] {
+    &[data-scheme="dark"] {
         --card-background: #424242;
         --card-background-selected: rgba(255, 255, 255, 0.16);
         --card-text-color-main: rgba(255, 255, 255, 0.9);
         --card-text-color-secondary: rgba(255, 255, 255, 0.7);
-        --card-text-color-tertiary: rgba(255, 255, 255, 0.79);
+        --card-text-color-tertiary: rgba(255, 255, 255, 0.5);
         --card-separator-color: rgba(255, 255, 255, 0.12);
-        --download-box: #565555;
     }
 }
 
@@ -121,10 +106,10 @@ $defaultTagColors: #fff,
 */
 :root {
     --article-font-family: var(--base-font-family);
-    --article-font-size: 1.5rem;
+    --article-font-size: 1.6rem;
 
-    @media (max-width: $on-tablet) {
-        --article-font-size: 1.5rem;
+    @include respond(md) {
+        --article-font-size: 1.7rem;
     }
 
     --article-line-height: 1.85;
@@ -147,21 +132,28 @@ $defaultTagColors: #fff,
     --pre-text-color: #f8f8f2;
 
     --code-background-color: rgba(0, 0, 0, 0.12);
-    --code-text-color: #474747;
+    --code-text-color: #808080;
 
     --table-border-color: #dadada;
-    --border-comments-color: #535353;
     --tr-even-background-color: #efefee;
 
-    [data-scheme="dark"] {
+    &[data-scheme="dark"] {
         --code-background-color: #272822;
         --code-text-color: rgba(255, 255, 255, 0.9);
 
         --table-border-color: #717171;
-        --border-comments-color: #eee;
         --tr-even-background-color: #545454;
 
         --blockquote-background-color: rgb(75 75 75);
+    }
+}
+
+/* Mobile Toc */
+:root {
+    --mobile-toc-background: #eaeef280;
+
+    &[data-scheme="dark"] {
+        --mobile-toc-background: #636e7b1a;
     }
 }
 
@@ -173,5 +165,8 @@ $defaultTagColors: #fff,
     --shadow-l1: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
     --shadow-l2: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     --shadow-l3: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    --shadow-l4: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    --shadow-l4: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
+        0px 0px 1px rgba(0, 0, 0, 0.04);
 }
+
+
