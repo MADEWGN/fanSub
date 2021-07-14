@@ -123,3 +123,6 @@ markup:
         endLevel: 4
         ordered: true
         startLevel: 2
+
+build:
+  writeStats: true
