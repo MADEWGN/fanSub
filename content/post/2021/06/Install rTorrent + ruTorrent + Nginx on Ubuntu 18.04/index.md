@@ -75,7 +75,7 @@ But you can copy and paste my configuration and save it on **.rtorrent.rc** in y
     - Port default is 5000, but I change to 6000 because I set nginx port to 5000
 
 {{< spoiler text="Click to Show Configuration" >}}
-```
+```nginx
 #############################################################################
 # This is an (old) example resource file for rTorrent.
 # Copy to ~/.rtorrent.rc and enable/modify the options as needed.
