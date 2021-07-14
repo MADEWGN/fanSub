@@ -1,37 +1,41 @@
 name: Deploy to Firebase Hosting
-'on':
-    push:
-        branches:
-            - main
-    workflow_dispatch:
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        description:    
+        required: false
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            -
-                uses: actions/checkout@v2
-                with:
-                submodules: true
-                fetch-depth: 0
-            -
-                name: Hugo setup
-                uses: peaceiris/actions-hugo@v2.4.13
-                with:
-                hugo-version: latest
-                extended: true
-            -
-                name: Setup Node
-                uses: actions/setup-node@v2
-                with:
-                node-version: 16.x
-            -
-                name: Generate Hugo Website
-                run: npm install && hugo --gc --minify
-            -
-                name: Deploy to Firebase
-                uses: FirebaseExtended/action-hosting-deploy@v0
-                with:
-                repoToken: '${{ secrets.GITHUB_TOKEN }}'
-                firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RMDHNREZA }}'
-                channelId: live
-                projectId: rmdhnreza
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.4.13
+        with:
+          hugo-version: latest
+          extended: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+
+      - name: Build
+        run: npm install && hugo --gc --minify
+
+      - name: Deploy
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RMDHNREZA }}'
+          channelId: live
+          projectId: rmdhnreza
