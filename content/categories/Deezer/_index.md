@@ -1,6 +1,6 @@
 ---
 title: "Deezer"
-description: "Kalian sedang melihat Katogori Deezer"
+description: "You are viewing Deezer category"
 slug: "deezer"
 image: "deezer.jpg"
 ---

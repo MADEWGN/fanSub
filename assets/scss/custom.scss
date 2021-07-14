@@ -192,6 +192,18 @@ code, pre {
     font-size: 12px;
 }
 
+.tagCloud .tagCloud-tags {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.tagCloud .tagCloud-tags a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .article-category a,
 .article-tags a {
     margin-right: 0px;

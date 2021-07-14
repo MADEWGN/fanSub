@@ -1,6 +1,6 @@
 ---
 title: "Windows"
-description: "Kalian sedang melihat Katogori Windows"
+description: "You are viewing Windows category"
 slug: "windows"
 image: "windows.jpg"
 ---

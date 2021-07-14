@@ -1,6 +1,6 @@
 ---
 title: "Android"
-description: "Kalian sedang melihat Katogori Android"
+description: "You are viewing Android category"
 slug: "android"
 image: "android.jpg"
 ---

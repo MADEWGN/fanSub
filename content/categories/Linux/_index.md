@@ -1,6 +1,6 @@
 ---
 title: "Linux"
-description: "Kalian sedang melihat Katogori Linux"
+description: "You are viewing Linux category"
 slug: "linux"
 image: "linux.jpg"
 ---

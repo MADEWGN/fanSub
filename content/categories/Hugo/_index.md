@@ -1,6 +1,6 @@
 ---
 title: "Hugo"
-description: "Kalian sedang melihat Katogori Hugo"
+description: "You are viewing Hugo category"
 slug: "hugo"
 image: "hugo.jpg"
 ---

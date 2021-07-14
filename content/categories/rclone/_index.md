@@ -1,6 +1,6 @@
 ---
-title: "rclone"
-description: "Kalian sedang melihat Katogori rclone"
+title: "rClone"
+description: "You are viewing rClone category"
 slug: "rclone"
 image: "rclone.jpg"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Heroku"
-description: "Kalian sedang melihat Katogori Heroku"
+description: "You are viewing Heroku category"
 slug: "heroku"
 image: "heroku.jpg"
 ---
