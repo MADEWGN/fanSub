@@ -1,3 +1,6 @@
+::marker {
+    font-weight: 700;
+}
 .container.extended {
     @include respond(vsm) {
         max-width: 95%;
@@ -161,6 +164,32 @@
 
 #article-toolbar .back-home {
     color: var(--body-text-color);
+}
+
+h2.widget-title.section-title::after {
+    content: "";
+    width: 75%;
+    height: 2px;
+    background-color: var(--body-text-color);
+    display: block;
+    margin-top: 5px;
+}
+
+.sidebar .widget:not(:last-of-type):after {
+    display: none;
+}
+
+.menu {
+    margin: 0;
+    border-radius: var(--card-border-radius);
+}
+
+p, ul, li, summary {
+    font-size: 16px;
+}
+
+code, pre {
+    font-size: 12px;
 }
 
 .article-category a,

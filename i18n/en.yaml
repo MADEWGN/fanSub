@@ -47,6 +47,10 @@ widget:
         title:
             other: Tags
 
+    categoriesCloud:
+        title:
+            other: Categories
+
 search:
     title:
         other: Search
