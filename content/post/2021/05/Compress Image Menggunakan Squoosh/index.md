@@ -16,7 +16,7 @@ keywords:
 image: photo.svg
 ---
 
-![Squoosh Web](rmdhnreza.my.id.cara.compress.image.menggunakan.squoosh.1.jpg)
+![Squoosh Web](rmdhnreza.my.id.cara.compress.image.menggunakan.squoosh.1.webp)
 
 ## Apa itu Squoosh
 
@@ -32,11 +32,11 @@ Untuk memperkecil ukuran gambar menggunakan browser
 2. Lalu pilih gambar yang akan kalian kecilkan ukurannya, bisa dengan cara klik +, drag & drop atau paste.
 3. Setelah gambar nya terpilih, kalian bisa resize, memilih *compressor* gambar yang digunakan, setting kualitas gambar (default 75), dll. Sesuaikan dengan kebutuhan kalian.
 
-![Squoosh Web](rmdhnreza.my.id.cara.compress.image.menggunakan.squoosh.2.jpg) ![Squoosh Web](rmdhnreza.my.id.cara.compress.image.menggunakan.squoosh.3.jpg)
+![Squoosh Web](rmdhnreza.my.id.cara.compress.image.menggunakan.squoosh.2.webp) ![Squoosh Web](rmdhnreza.my.id.cara.compress.image.menggunakan.squoosh.3.webp)
 
 4. Bisa dilihat disini, ukuran gambar yang awalnya 791 kB menjadi 10.2 kB.
 
-![Squoosh Web](rmdhnreza.my.id.cara.compress.image.menggunakan.squoosh.4.jpg)
+![Squoosh Web](rmdhnreza.my.id.cara.compress.image.menggunakan.squoosh.4.webp)
 
 5. Jika dirasa sudah cukup setting gambar nya, kalian bisa klik download dengan mengklik icon dipojok kanan bawah.
 
@@ -49,13 +49,13 @@ Untuk Squoosh CLI, kalian bisa memperkecil gambar dalam jumlah banyak sekaligus,
 3. Install squoosh cli dengan perintah `npm i -g @squoosh/cli` kalian juga bisa menggunakan npx `npx @squoosh/cli`
 4. Untuk mendapatkan ukuran gambar yang kalian inginkan, kalian bisa buka terlebih dahulu [Squoosh.app](https://squoosh.app), upload gambar lalu setting, setelah kalian mendapatkan settingan yang pas kalian klik pada icon terminal (Copy NPX Command)
 
-![Squoosh CLI](rmdhnreza.my.id.cara.compress.image.menggunakan.squoosh.5.jpg)
+![Squoosh CLI](rmdhnreza.my.id.cara.compress.image.menggunakan.squoosh.5.webp)
 
 5. Setelah mendapatkan perintah nya, sekarang kalian tinggal paste di terminal
   * **Note:** `npx @squoosh/cli` bisa diganti dengan `squoosh-cli` jika kalian sudah menginstall `npm i -g @squoosh/cli` 
-  * **gambar.jpg** diganti dengan nama gambar kalian
+  * **gambar.webp** diganti dengan nama gambar kalian
 ```bash
-npx @squoosh/cli --webp '{"quality":75,"target_size":0,"target_PSNR":0,"method":4,"sns_strength":50,"filter_strength":60,"filter_sharpness":0,"filter_type":1,"partitions":0,"segments":4,"pass":1,"show_compressed":0,"preprocessing":0,"autofilter":0,"partition_limit":0,"alpha_compression":1,"alpha_filtering":1,"alpha_quality":100,"lossless":0,"exact":0,"image_hint":0,"emulate_jpeg_size":0,"thread_level":0,"low_memory":0,"near_lossless":100,"use_delta_palette":0,"use_sharp_yuv":0}' gambar.jpg
+npx @squoosh/cli --webp '{"quality":75,"target_size":0,"target_PSNR":0,"method":4,"sns_strength":50,"filter_strength":60,"filter_sharpness":0,"filter_type":1,"partitions":0,"segments":4,"pass":1,"show_compressed":0,"preprocessing":0,"autofilter":0,"partition_limit":0,"alpha_compression":1,"alpha_filtering":1,"alpha_quality":100,"lossless":0,"exact":0,"image_hint":0,"emulate_jpeg_size":0,"thread_level":0,"low_memory":0,"near_lossless":100,"use_delta_palette":0,"use_sharp_yuv":0}' gambar.webp
 ```
-6. Jika kalian ingin memperkecil gambar sekaligus kalian bisa ganti `gambar.jpg` menjadi `*.jpg`
+6. Jika kalian ingin memperkecil gambar sekaligus kalian bisa ganti `gambar.webp` menjadi `*.webp`
   * **Note:** Pada saat artikel ini dibuat memperkecil gambar dalam jumlah 30 lebih bisa membuat squoosh cli nya crash, jadi saran saya lebih baik kurang dari 30.

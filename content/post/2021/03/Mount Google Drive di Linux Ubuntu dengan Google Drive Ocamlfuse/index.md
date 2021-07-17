@@ -34,22 +34,22 @@ sudo add-apt-repository ppa:alessandro-strada/ppa -y && sudo apt install google-
 yay -S google-drive-ocamlfuse
 ```
 
-![Install google-drive-ocamlfuse](google-drive-ocamlfuse-0.jpg)
+![Install google-drive-ocamlfuse](google-drive-ocamlfuse-0.webp)
 
 2. Setelah berhasil terinstall kalian jalankan perintah berikut ini terlebih dahulu (wajib)
 ```bash
 google-drive-ocamlfuse
 ```
 
-![Perintah google-drive-ocamlfuse](google-drive-ocamlfuse-1.jpg)
+![Perintah google-drive-ocamlfuse](google-drive-ocamlfuse-1.webp)
 
 3. Maka akan otomatis membuka browser, kalian log in menggunakan akun Google kalian
 
-![Login dengan akun google kalian](google-drive-ocamlfuse-2.jpg)
+![Login dengan akun google kalian](google-drive-ocamlfuse-2.webp)
 
 4. Tunggu beberapa saat sampai di terminal tertulis `Access token retrieved correctly.`
 
-![Mendapatkan Akses Token (otomatis)](google-drive-ocamlfuse-3.jpg) ![Access token retrieved correctly.](google-drive-ocamlfuse-4.jpg)
+![Mendapatkan Akses Token (otomatis)](google-drive-ocamlfuse-3.webp) ![Access token retrieved correctly.](google-drive-ocamlfuse-4.webp)
 
 5. Buat folder di *home directory* untuk *mount* Google Drive nya, bebas dengan nama apapun, disini saya menggunakan nama **GoogleDrive**
 ```bash
@@ -60,18 +60,18 @@ mkdir $HOME/GoogleDrive
 google-drive-ocamlfuse $HOME/GoogleDrive
 ```
 
-![mount google-drive-ocamlfuse](google-drive-ocamlfuse-5.jpg)
+![mount google-drive-ocamlfuse](google-drive-ocamlfuse-5.webp)
 
 7. Cek jika *mount* sudah berhasil
 ```bash
 df -h
 ```
 
-![mount google-drive-ocamlfuse](google-drive-ocamlfuse-9.jpg) ![mount google-drive-ocamlfuse](google-drive-ocamlfuse-6.jpg)
+![mount google-drive-ocamlfuse](google-drive-ocamlfuse-9.webp) ![mount google-drive-ocamlfuse](google-drive-ocamlfuse-6.webp)
 
 8. Jika kalian ingin upload file ke Google Drive, kalian tinggal copy-paste saja file nya ke folder GoogleDrive nya, maka akan otomatis **sync**, disini saya copy-paste **apps.deb**
 
-![Upload ke Google Drive](google-drive-ocamlfuse-7.jpg) ![Sync Google Drive](google-drive-ocamlfuse-8.jpg)
+![Upload ke Google Drive](google-drive-ocamlfuse-7.webp) ![Sync Google Drive](google-drive-ocamlfuse-8.webp)
 
 Untuk lebih lengkapnya tentang google-drive-ocamlfuse ini kalian bisa langsung lihat di [documentation](https://github.com/astrada/google-drive-ocamlfuse/wiki) nya yang ada di github\
 google-drive-ocamlfuse juga bisa dipakai untuk Team Drive, jika kalian ingin *mount* Shared drives kalian.

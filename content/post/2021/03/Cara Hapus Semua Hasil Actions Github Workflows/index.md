@@ -9,7 +9,7 @@ image: github.svg
 ---
 
 Pada kesempatan kali ini saya akan share Cara Hapus Semua Log Workflows Hasil Github Actions, seperti ini
-![Github Workflows](gh-actions-1.jpg)
+![Github Workflows](gh-actions-1.webp)
 
 Disini saya menggunakan Linux Ubuntu, tapi untuk sistem operasi lain sama saja perintahnya, yang berbeda hanya penginstallan gh-cli nya saja, Oke langsung ke tutorialnya.
 1. Install **gh-cli jq** dan **findutils** untuk Sistem Operasi 
@@ -28,13 +28,13 @@ sudo pacman -S github-cli jq findutils
 ```powershell
 scoop install gh jq findutils
 ```
-![Install github-cli](gh-actions-2.jpg)
+![Install github-cli](gh-actions-2.webp)
 
 2. Cek github cli nya apakah sudah sukses terintall dengan perintah
 ```bash
 gh --version
 ```
-![Cek gh cli apakah sudah terinstall](gh-actions-3.jpg)
+![Cek gh cli apakah sudah terinstall](gh-actions-3.webp)
 
 3. Masukan perintah berikut ini untuk login ke akun github kalian yang akan dihapus log workflows nya
 ```bash
@@ -48,7 +48,7 @@ gh auth login
    ? Authorize Github
    ? Tekan Enter di terminal
 ```
-![Login akun github menggunakan gh-cli](gh-actions-4.jpg)
+![Login akun github menggunakan gh-cli](gh-actions-4.webp)
 
 4. Setelah kalian sukses login, kalian gunakan perintah ini untuk menghapus semua log workflows hasil github actions
 ```bash
@@ -60,7 +60,7 @@ gh api repos/username/namarepo/actions/runs \
    - **username** ganti dengan **username** github kalian !
    - **namarepo** ganti dengan **nama repository** yang akan di hapus log workflows nya !
    - Jika kalian tidak ingin menghapus log workflows di branch `main` ganti `master` dengan `main`, begitupun sebaliknya! Perintah diatas **tidak menghapus** log workflows di branch `master`
-![Hapus semua log workflows hasil github actions](gh-actions-5.jpg)
+![Hapus semua log workflows hasil github actions](gh-actions-5.webp)
 
 5. Setelah kalian menjalankan perintahnya cek log workflows nya apakah sudah terhapus atau belum. Jika belum terhapus semua kalian jalankan lagi saja perintahnya sampai semuanya terhapus
-![Install github-cli](gh-actions-6.jpg)
+![Install github-cli](gh-actions-6.webp)

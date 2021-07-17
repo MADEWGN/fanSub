@@ -2,5 +2,5 @@
 title: "Android"
 description: "You are viewing Android category"
 slug: "android"
-image: "android.jpg"
+image: "android.webp"
 ---

@@ -14,7 +14,7 @@ keywords:
   ]
 ---
 
-![Camtasia](camtasia.png)
+![Camtasia](camtasia.webp)
 
 Camtasia 2021 Full Terbaru bagi kalian yang mencari software Camtasia 2021 terbaru full, kali ini akan saya share versi terbarunya, software ini sudah dalam versi Camtasia 2021.0.0 Build 30170 memiliki fungsi sebagai desktop recorder video sekaligus editing video dengan menghasilkan berbagai jenis format video. software ini sudah terkenal, untuk kalian yang ingin segera update ke versi baru silahkan download Camtasia 2021 Terbaru filenya di bawah.
 
@@ -42,7 +42,7 @@ Internet dipenuhi dengan tutorial dan semua jenis video di mana pengupload merek
 
 Untuk gampang membuka folder **ProgramData** nya, kalian bisa tekan shortcur **Win + R** untuk membuka dialog Run, lalu ketikan `%ProgramData%`
 
-![Dialog Run](run.png)
+![Dialog Run](run.webp)
 
 6. Selanjutnya jalankan 
     * CamRecorder.exe

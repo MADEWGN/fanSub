@@ -40,5 +40,5 @@ Atau menggunakan **wget**
  youtube-dl -x --audio-format flac  "https://www.youtube.com/watch?v=AnF_VOliv0E"
 ```
 `-x` adalah kependekan dari `--extract-audio`
-![youtube-dl](youtube-dl-1.jpg)
-![youtube-dl](youtube-dl-2.jpg)
+![youtube-dl](youtube-dl-1.webp)
+![youtube-dl](youtube-dl-2.webp)

@@ -30,19 +30,19 @@ Some users maybe hate proton tabs because it's looking like floating button inst
 3. Search `browser.proton.enabled` and set value to `false`
 
 {{< spoiler text="Click to Show Image" >}}
-![Disable Proton Tabs](rmdhnreza.my.id.restore.firefox.89.old.ui.1.jpg)
+![Disable Proton Tabs](rmdhnreza.my.id.restore.firefox.89.old.ui.1.webp)
 {{< /spoiler >}}
 
 4. To make more compact search `browser.compactmode.show` and set value to `true`
 
 {{< spoiler text="Click to Show Image" >}}
-![Show Compact Mode](rmdhnreza.my.id.restore.firefox.89.old.ui.2.jpg)
+![Show Compact Mode](rmdhnreza.my.id.restore.firefox.89.old.ui.2.webp)
 {{< /spoiler >}}
 
 5. Click on the hamburger menu → More Tools → Customize Toolbar... → Density → Compact (not supported)
 
 {{< spoiler text="Click to Show Image" >}}
-![Enable Compact Mode](rmdhnreza.my.id.restore.firefox.89.old.ui.3.jpg)
+![Enable Compact Mode](rmdhnreza.my.id.restore.firefox.89.old.ui.3.webp)
 {{< /spoiler >}}
 
 **Sadly, `browser.proton.enabled` will be removed in Firefox 90 Stable.**
@@ -115,7 +115,7 @@ Some users maybe hate proton tabs because it's looking like floating button inst
 8. The UI look like this
 
 {{< spoiler text="Click to Show Image" >}}
-![Firefox userChrome.css](rmdhnreza.my.id.restore.firefox.89.old.ui.4.jpg)
+![Firefox userChrome.css](rmdhnreza.my.id.restore.firefox.89.old.ui.4.webp)
 {{< /spoiler >}}
 
 To disable `userChrome.css` just set value `toolkit.legacyUserProfileCustomizations.stylesheets` to `false`

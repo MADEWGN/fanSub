@@ -18,7 +18,7 @@ keywords:
 image: nextdns.svg
 ---
 
-![NextDNS](rmdhnreza.my.id.next.dns.jpg)
+![NextDNS](rmdhnreza.my.id.next.dns.webp)
 
 ## NextDNS The new firewall for the modern Internet.
 NextDNS melindungi Anda dari semua jenis ancaman keamanan (*malware*), memblokir iklan dan pelacak di situs web dan aplikasi (*ads & trackers*), serta menyediakan Internet yang aman dan terawasi untuk anak-anak (*Family Protection*) — di semua perangkat dan di semua jaringan.
@@ -33,19 +33,19 @@ NextDNS melindungi Anda dari semua jenis ancaman keamanan (*malware*), memblokir
 1. Kalian kunjungi halaman [NextDNS.io](https://my.nextdns.io/signup)
 2. Daftar Menggunakan alamat E-Mail
 
-![Mendaftar NextDNS](rmdhnreza.my.id.next.dns.1.png)
+![Mendaftar NextDNS](rmdhnreza.my.id.next.dns.1.webp)
 
 3. Setelah mendaftar maka akan muncul tampilan seperti ini, **dan kalian ingat-ingat ID Next DNS kalian, karena ini akan dipakai saat nanti dipasang ke perangkat kalian.** Tapi sebelum memulai pemasangan NextDNS ke perangkat kalian, lebih baik kalian setting-setting dulu NextDNS nya.
 
 
-![NextDNS ID](rmdhnreza.my.id.next.dns.id.png) ![NextDNS](rmdhnreza.my.id.next.dns.2.png)
+![NextDNS ID](rmdhnreza.my.id.next.dns.id.webp) ![NextDNS](rmdhnreza.my.id.next.dns.2.webp)
 
   * **Tab Security**
     * Pada bagian ini kalian bisa enable Google Safesearch, Block Domain yang baru saja didaftarkan, dll.
 
 {{< spoiler text="Klik Untuk Melihat Gambar" >}}
 
-![Tab Security](rmdhnreza.my.id.next.dns.3.png)
+![Tab Security](rmdhnreza.my.id.next.dns.3.webp)
 
 {{< /spoiler >}}
 
@@ -66,49 +66,49 @@ NextDNS melindungi Anda dari semua jenis ancaman keamanan (*malware*), memblokir
     * Allow Affiliate & Tracking Links - Off
 
 {{< spoiler text="Klik Untuk Melihat Gambar" >}}
-![Tab Privacy](rmdhnreza.my.id.next.dns.4.png)
+![Tab Privacy](rmdhnreza.my.id.next.dns.4.webp)
 {{< /spoiler >}}
 
   * **Tab Parental Control**
     * Jika kalian ingin block situs porno, judi, social media, dll. Ada pada bagian ini, silahkan tinggal add saja filter nya sesuai yang kalian butuhkan
 
 {{< spoiler text="Klik Untuk Melihat Gambar" >}}
-![Parental Control](rmdhnreza.my.id.next.dns.5.png)
+![Parental Control](rmdhnreza.my.id.next.dns.5.webp)
 {{< /spoiler >}}
 
   * **Tab Denylist**
     * Di Tab ini jika kalian ingin block domain manual
 
 {{< spoiler text="Klik Untuk Melihat Gambar" >}}
-![Tab Denylist](rmdhnreza.my.id.next.dns.6.png)
+![Tab Denylist](rmdhnreza.my.id.next.dns.6.webp)
 {{< /spoiler >}}
 
   * **Tab Allowlist**
     * Di Tab ini jika kalian ingin membuka situs yang terblock
 
 {{< spoiler text="Klik Untuk Melihat Gambar" >}}
-![Tab Allowlist](rmdhnreza.my.id.next.dns.7.png)
+![Tab Allowlist](rmdhnreza.my.id.next.dns.7.webp)
 {{< /spoiler >}}
 
   * **Tab Analitycs**
     * Di Tab ini berisi informasi total query yang masuk, **Untuk NextDNS Free itu dibatasi 300,000 query per bulan.**
 
 {{< spoiler text="Klik Untuk Melihat Gambar" >}}
-![Tab Analitycs](rmdhnreza.my.id.next.dns.8.png)
+![Tab Analitycs](rmdhnreza.my.id.next.dns.8.webp)
 {{< /spoiler >}}
 
   * **Tab Logs**
     * Berisi domain yang di akses di perangkat yang dipasang NextDNS
 
 {{< spoiler text="Klik Untuk Melihat Gambar" >}}
-![Tab Logs](rmdhnreza.my.id.next.dns.9.png)
+![Tab Logs](rmdhnreza.my.id.next.dns.9.webp)
 {{< /spoiler >}}
 
   * **Tab Settings**
     * Untuk settings untuk config NextDNS, seperti nama, block page, dll.
 
 {{< spoiler text="Klik Untuk Melihat Gambar" >}}
-![Tab Settings](rmdhnreza.my.id.next.dns.10.png)
+![Tab Settings](rmdhnreza.my.id.next.dns.10.webp)
 {{< /spoiler >}}
 
 ## Settings NextDNS di Android

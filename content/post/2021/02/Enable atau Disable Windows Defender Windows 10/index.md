@@ -15,15 +15,15 @@ Sebelum menonaktifkan Defender Antivirus, pastikan kalian Off kan terlebih dahul
 Caranya:
 1. Buka __Windows Security__, dan click/tap di __Virus & threat protection__ icon.
 
-![Tamper Protection](tamper-protection-1.jpg)
+![Tamper Protection](tamper-protection-1.webp)
 
 2. Click/tap on the __Manage settings__ link dibawah __Virus & threat protection settings__
 
-![Tamper Protection](tamper-protection-2.jpg)
+![Tamper Protection](tamper-protection-2.webp)
 
 3. Scroll sampai bawah dan Off kan __Tamper Protection__
 
-![Tamper Protection](tamper-protection-3.jpg)
+![Tamper Protection](tamper-protection-3.webp)
 
 Jika sudah, ikuti langkah selanjutnya.
 
@@ -37,13 +37,13 @@ Computer Configuration\Administrative Templates\Windows Components\Windows\Defen
 Untuk Windows 10 version 2004 dan selanjutnya
 Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Antivirus
 
-![Local Group Policy Editor](gpedit-1.jpg)
+![Local Group Policy Editor](gpedit-1.webp)
 
 3. Di Panel sebelah kanan __Windows Defender Antivirus__ atau __Microsoft Defender Antivirus__, double click/tap di __Turn off Windows Defender Antivirus__ atau __Turn off Microsoft Defender Antivirus__ Untuk mengedit policy nya
 4. Untuk Disable Defender Antivirus kalian pilih __Enabled__ 
 5. Sedangkan untuk Enable Defender Antivirus kalian pilih __Not Configured__ atau __Disabled__
 
-![Local Group Policy Editor](gpedit-2.jpg)
+![Local Group Policy Editor](gpedit-2.webp)
 
 #### Cara 2: Menggunakan Registry Editor (Regedit)
 

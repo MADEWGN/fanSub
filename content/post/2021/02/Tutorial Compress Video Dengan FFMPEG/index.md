@@ -36,7 +36,7 @@ Jika kalian menggunakan snap bisa menggunakan perintah
 
 5. Perbedaan kecepatan compress menggunakan CPU dan GPU (*Hardware Accelerated*)
 
-![CPU](1.jpg) ![GPU](2.jpg)
+![CPU](1.webp) ![GPU](2.webp)
 
 6. Jika kalian ingin setting mengganti resolusi, bitrate audio & video nya kalian bisa menggunakan perintah
 
@@ -50,4 +50,4 @@ ffmpeg -hide_banner -c:v h264_cuvid -resize 854x480 -i 1080p.mp4 -c:v h264_nvenc
 ```
 Perintah diatas mengubah resolusi menjadi 480p, bitrate audio menjadi 64k dan bitrate video menjadi 512k
 
-![File size](3.jpg)
+![File size](3.webp)

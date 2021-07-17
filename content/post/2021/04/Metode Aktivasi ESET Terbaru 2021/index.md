@@ -31,25 +31,25 @@ Cara yang akan share disini cukup ribet, kalian sampai harus restart Desktop/Lap
 2. __Disable HIPS ESET__ nya terlebih dahulu caranya masuk ke `Setup ->> Advanced Setup ->> HIPS ->> Enable HIPS ->> Off kan ->> Restart Desktop/Laptop.`
    - __Note: Jangan browsingan, buka crack, dll. Soalnya bahaya juga kalo HIPS nya lagi di Disable.__
 
-![Disable HIPS](1.png)
+![Disable HIPS](1.webp)
 
 3. Tekan shortcut __Win + R__ untuk buka Run, masukan `%ProgramData%\ESET\ESET Security\License`
 
-![Windows Run](2.png)
+![Windows Run](2.webp)
 
 4. Nanti ada 1 file __license.lf__. Kalian boleh hapus, rename, atau timpa dengan __license.lf__ yang udah di download tadi di langkah nomor 1
    - __Note: Jika tidak bisa dihapus, rename atau ditimpa, berarti belum di disable HIPS nya, Ulangi lagi langkah 2!__
 
-![Disini saya hanya rename license.lf menjadi license-.lf (Klik pada gambar untuk memperjelas)](3.png)
+![Disini saya hanya rename license.lf menjadi license-.lf (Klik pada gambar untuk memperjelas)](3.webp)
 
 5. __Enable lagi HIPS__-nya masuk ke `Setup ->> Advanced Setup ->> HIPS ->> Enable HIPS ->> On kan ->> Restart Desktop/Laptop.`
 
-![Enable HIPS](4.png)
+![Enable HIPS](4.webp)
 
 6. Update Database ESET nya.
 
-![Update Database](7.png) ![Update Database](8.png)
+![Update Database](7.webp) ![Update Database](8.webp)
 
 Udah dicoba dari awal ESET mulai gencar-gencarnya razia license dan masih bisa update Database ESET nya sampai sekarang, sayangnya gk bisa ganti product (misalnya dari NOD ke EIS, pasti muncul error) kalo mau ganti product uninstall dulu ESET nya via safe mode pake ESET Uninstaller. Cara ini sudah saya coba di NOD32 dan EIS, bisa dua-dua nya.
 
-![Expired 2024](5.png) ![Tidak bisa mengganti product, misalnya dari NOD32 ke EIS](6.png)
+![Expired 2024](5.webp) ![Tidak bisa mengganti product, misalnya dari NOD32 ke EIS](6.webp)

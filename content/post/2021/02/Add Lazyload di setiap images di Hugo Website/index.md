@@ -35,4 +35,4 @@ layouts
 ```
 7. Jika berhasil, maka gambar akan muncul dengan sempurna dan terdapat `class="lazyload"`, jika gambar tidak muncul pastikan tidak ada error yang berhubungan dengan `lazysizes.min.js`, atau kalian bisa lihat di ***Inspect Element*** bagian ***Console*** disana akan terdapat error yang akan memudahkan kalian untuk memecahkan masalahnya.
 
-![Lazyload](1.jpeg)
+![Lazyload](1.webp)

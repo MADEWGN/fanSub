@@ -211,7 +211,7 @@ network.scgi.open_port = "127.0.0.1:6000"
 After all configuration has been set up, you can run command `rtorrent`, if no error, this will look like this.\
 Hit `CTRL + Q` for kill rtorrent
 
-![rTorrent](rmdhnreza.my.id.install.rutorrent.1.jpg)
+![rTorrent](rmdhnreza.my.id.install.rutorrent.1.webp)
 
 ## Configuration Nginx and PHP
 1. You can use favorite editor for edit this configuration, You can find it on `/etc/nginx/sites-available/default`\
@@ -329,7 +329,7 @@ sudo service nginx start
 ```
 4. Try open in browser `localhost:5000`
 
-![Nginx](rmdhnreza.my.id.install.rutorrent.2.jpg)
+![Nginx](rmdhnreza.my.id.install.rutorrent.2.webp)
 
 ## Configuration ruTorrent WebUI v3.10
 1. Download ruTorrent WebUI v3.10 [github releases](https://github.com/Novik/ruTorrent/archive/refs/tags/v3.10.zip)
@@ -450,6 +450,6 @@ screen -d -m -S rtorrent rtorrent
 pkill -9 screen
 ```
 
-![ruTorrent](rmdhnreza.my.id.install.rutorrent.3.jpg) ![ruTorrent](rmdhnreza.my.id.install.rutorrent.4.jpg) 
+![ruTorrent](rmdhnreza.my.id.install.rutorrent.3.webp) ![ruTorrent](rmdhnreza.my.id.install.rutorrent.4.webp) 
 
-![ruTorrent](rmdhnreza.my.id.install.rutorrent.5.jpg)
+![ruTorrent](rmdhnreza.my.id.install.rutorrent.5.webp)

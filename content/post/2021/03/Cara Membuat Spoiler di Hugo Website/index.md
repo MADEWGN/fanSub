@@ -42,7 +42,7 @@ rmdhnreza.my.id
 3. Jika sudah kalian save.
 4. Untuk membuat spoiler kalian tambahkan kode berikut pada postingan kalian
 
-![Spoiler Hugo](1.jpg)
+![Spoiler Hugo](1.webp)
 
 5. Jadinya seperti ini
 

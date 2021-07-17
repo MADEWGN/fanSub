@@ -63,7 +63,7 @@ params:
         cover:
             enabled: true
         content:
-            enabled: true
+            enabled: false
     valine:
         enable: true
         appId: Y9oQNP8KiGORnFYVlAYXMyz8-MdYXbMMI

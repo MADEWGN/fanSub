@@ -32,37 +32,37 @@ This script also same if you don't configure first, can't download a big file fr
     * Note: If you don't have project Click on **Select Project** → **New Project**
 
 {{< spoiler text="Click to Show Image" >}}
-![Create Project](rmdhnreza.my.id.google.drive.cli.1.jpg) ![Create Project](rmdhnreza.my.id.google.drive.cli.2.jpg)
+![Create Project](rmdhnreza.my.id.google.drive.cli.1.webp) ![Create Project](rmdhnreza.my.id.google.drive.cli.2.webp)
 {{< /spoiler >}}
 
 2. Click Hamburger menu on the left → **Select API & Services** → **Select Library**
 
 {{< spoiler text="Click to Show Image" >}}
-![API & Services](rmdhnreza.my.id.google.drive.cli.3.jpg)
+![API & Services](rmdhnreza.my.id.google.drive.cli.3.webp)
 {{< /spoiler >}}
 
 3. Search for **Google Drive API** and **Enable Google Drive API**
 
 {{< spoiler text="Click to Show Image" >}}
-![Enable Drive API](rmdhnreza.my.id.google.drive.cli.4.jpg) ![Enable Drive API](rmdhnreza.my.id.google.drive.cli.5.jpg) 
+![Enable Drive API](rmdhnreza.my.id.google.drive.cli.4.webp) ![Enable Drive API](rmdhnreza.my.id.google.drive.cli.5.webp) 
 {{< /spoiler >}}
 
 4. Click Credentials on left pane and Click **+ CREATE CREDENTIALS** and select **OAuth Client ID**
 
 {{< spoiler text="Click to Show Image" >}}
-![Create Credentials](rmdhnreza.my.id.google.drive.cli.6.jpg) ![Create Credentials](rmdhnreza.my.id.google.drive.cli.7.jpg) 
+![Create Credentials](rmdhnreza.my.id.google.drive.cli.6.webp) ![Create Credentials](rmdhnreza.my.id.google.drive.cli.7.webp) 
 {{< /spoiler >}}
 
 **Note:** If you face this error, click on **CONFIGURE CONSENT SCREEN**
 
 {{< spoiler text="Click to Show Image" >}}
-![CONFIGURE CONSENT SCREEN](rmdhnreza.my.id.google.drive.cli.8.jpg) 
+![CONFIGURE CONSENT SCREEN](rmdhnreza.my.id.google.drive.cli.8.webp) 
 {{< /spoiler >}}
 
   * Select **External** and click **CREATE**
 
 {{< spoiler text="Click to Show Image" >}}
-![CONFIGURE CONSENT SCREEN](rmdhnreza.my.id.google.drive.cli.9.jpg) 
+![CONFIGURE CONSENT SCREEN](rmdhnreza.my.id.google.drive.cli.9.webp) 
 {{< /spoiler >}}
 
   * Just fill in the section
@@ -78,7 +78,7 @@ This script also same if you don't configure first, can't download a big file fr
 6. If success, you will get Client ID and Client Secret, **Save it**.
 
 {{< spoiler text="Click to Show Image" >}}
-![Client ID and Secret ID](rmdhnreza.my.id.google.drive.cli.10.jpg) 
+![Client ID and Secret ID](rmdhnreza.my.id.google.drive.cli.10.webp) 
 {{< /spoiler >}}
 
 ## Download a File From Google Drive
@@ -98,7 +98,7 @@ gdl -o driveID
 ```
 
 {{< spoiler text="Click to Show Image" >}}
-![Download File from Google Drive](rmdhnreza.my.id.google.drive.cli.11.jpg) 
+![Download File from Google Drive](rmdhnreza.my.id.google.drive.cli.11.webp) 
 {{< /spoiler >}}
 
 
@@ -108,32 +108,32 @@ gdl -o driveID
     * Refresh Token → Just blank and hit enter
     * And the link will appear, click on that link to get **authorization code**
 {{< spoiler text="Click to Show Image" >}}
-![Download File from Google Drive](rmdhnreza.my.id.google.drive.cli.12.jpg)
+![Download File from Google Drive](rmdhnreza.my.id.google.drive.cli.12.webp)
 {{< /spoiler >}}
       * Login with your Google Account
 {{< spoiler text="Click to Show Image" >}}
-![Login Google Account](rmdhnreza.my.id.google.drive.cli.13.jpg)
+![Login Google Account](rmdhnreza.my.id.google.drive.cli.13.webp)
 {{< /spoiler >}}
       * **In this case** Warning like this is normal, because app we create earlier is not verified by Google, so just click **show advanced** and click Go to **yourappname (unsafe)**
 {{< spoiler text="Click to Show Image" >}}
-![Warning](rmdhnreza.my.id.google.drive.cli.14.jpg)
+![Warning](rmdhnreza.my.id.google.drive.cli.14.webp)
 {{< /spoiler >}}
       * Click Allow
 {{< spoiler text="Click to Show Image" >}}
-![Allow Apps](rmdhnreza.my.id.google.drive.cli.15.jpg)
+![Allow Apps](rmdhnreza.my.id.google.drive.cli.15.webp)
 {{< /spoiler >}}
       * Click Allow Again
 {{< spoiler text="Click to Show Image" >}}
-![Allow Apps](rmdhnreza.my.id.google.drive.cli.16.jpg)
+![Allow Apps](rmdhnreza.my.id.google.drive.cli.16.webp)
 {{< /spoiler >}}
       * And you get **authorization code** copy and paste to terminal console
 {{< spoiler text="Click to Show Image" >}}
-![Auth code](rmdhnreza.my.id.google.drive.cli.17.jpg)
+![Auth code](rmdhnreza.my.id.google.drive.cli.17.webp)
 {{< /spoiler >}}
 6. And file will be downloaded immediately
 
 {{< spoiler text="Click to Show Image" >}}
-![Download File](rmdhnreza.my.id.google.drive.cli.19.jpg)
+![Download File](rmdhnreza.my.id.google.drive.cli.19.webp)
 {{< /spoiler >}}
 
 If you want to download a big file again, just use command `gdl -o driveID`  and will not be asked to enter the auth code.

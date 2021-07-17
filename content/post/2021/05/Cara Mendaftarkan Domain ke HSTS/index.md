@@ -16,7 +16,7 @@ keywords:
 image: hsts.svg
 ---
 
-![HSTS](1.jpg)
+![HSTS](1.webp)
 
 ## Apa itu HSTS
 
@@ -85,24 +85,24 @@ Sayangnya sampai artikel ini dibuat, **Github Pages masih tidak support HSTS**
 
 1. Kalian kunjungi [hstspreload.org](https://hstspreload.org)
 
-![hstspreload.org](1.jpg)
+![hstspreload.org](1.webp)
 
 2. Masukan domain kalian yang akan di daftarkan ke HSTS preload list
 
-![Masukan Domain Kalian](2.jpg)
+![Masukan Domain Kalian](2.webp)
 
 3. Klik **Check HSTS preload status and eligibility**
 
-![Check HSTS preload status and eligibility](3.jpg)
+![Check HSTS preload status and eligibility](3.webp)
 
 4. Jika tidak ada error, maka akan muncul tampilan seperti ini dan kalian ceklis dua-dua nya
 
-![Check HSTS preload status and eligibility](4.jpg)
+![Check HSTS preload status and eligibility](4.webp)
 
 5. Klik **Submit rmdhnreza.my.id to the HSTS preload list**, maka nanti akan muncul **Success**
 
-![Success](5.jpg)
+![Success](5.webp)
 
 7. Proses ini membutuhkan waktu sampai berminggu-minggu, jadi kalian bisa cek setiap hari untuk melihat apakah domain kalian sudah terdaftar di HSTS preload list atau belum
 
-![Tinggal menunggu](6.jpg)
+![Tinggal menunggu](6.webp)

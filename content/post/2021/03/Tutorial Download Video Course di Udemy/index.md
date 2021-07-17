@@ -30,7 +30,7 @@ git clone https://github.com/r0oth3x49/udemy-dl.git
 ```python
 pip3 install --user -r requirements.txt
 ```
-![Download atau Clone](udemy-dl-1.jpg) ![Install requirements](udemy-dl-2.jpg) ![Install requirements](udemy-dl-3.jpg)
+![Download atau Clone](udemy-dl-1.webp) ![Install requirements](udemy-dl-2.webp) ![Install requirements](udemy-dl-3.webp)
 
 4. Login ke [udemy.com](https://www.udemy.com/) dengan akun kalian untuk mendapatkan akses token
 
@@ -43,7 +43,7 @@ pip3 install --user -r requirements.txt
 4. Klik tanda panah lagi pada **Cookies**
 5. Cari **access_token** dan copy **Content** nya
 
-![Access Token Google Chrome](udemy-dl-4.jpg)
+![Access Token Google Chrome](udemy-dl-4.webp)
 {{< /spoiler >}}
 
 ## Mendapatkan Akses Token di Mozilla Firefox
@@ -54,14 +54,14 @@ pip3 install --user -r requirements.txt
 3. Pilih **Cookies**
 4. Cari **access_token** dan copy **Value** nya
 
-![Access Mozilla Firefox](udemy-dl-5.jpg)
+![Access Mozilla Firefox](udemy-dl-5.webp)
 {{< /spoiler >}}
 
 5. Setelah kalian mendapatkan akses token nya, kalian buat file dengan nama **cookies.txt** dan isi dengan akses token kalian menggunakan format berikut lalu save
 ```
 access_token=AKSESTOKENKALIAN
 ```
-![Cookies.txt](udemy-dl-6.jpg)
+![Cookies.txt](udemy-dl-6.webp)
 
 6. Sekarang kita akan download video nya, disini saya contohkan download kursus ini [https://www.udemy.com/course/diversity-at-workplace-t/learn/lecture/25380564](https://www.udemy.com/course/diversity-at-workplace-t/learn/lecture/25380564), maka perintahnya
 ```bash
@@ -73,8 +73,8 @@ python3 udemy-dl.py --cookies cookies.txt https://www.udemy.com/course/diversity
    - **--output /home/rmdhnreza/Udemy\ Video** yaitu file yang kita download akan disimpan di folder /home/rmdhnreza/Udemy\ Video, jika kalian tidak setting ini maka hasil download akan disimpan di folder udemy-dl
    - Untuk syntax lainnya kalian bisa lihat di [README.md](https://github.com/r0oth3x49/udemy-dl/blob/master/README.md)
 
-![Proses Download](udemy-dl-7.jpg)
+![Proses Download](udemy-dl-7.webp)
 
 7. Video berhasil di download
 
-![Hasil Download](udemy-dl-8.jpg)
+![Hasil Download](udemy-dl-8.webp)

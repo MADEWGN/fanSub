@@ -19,13 +19,13 @@ Computer Configuration/Administrative Templates/Windows Components/Search
 
 3. Di Panel sebelah kanan **Search**, double click/tap di **Allow Cortana** Untuk mengedit policy nya
 
-![Local Group Policy Editor](1.png)
+![Local Group Policy Editor](1.webp)
 
 4. Langkah selanjutnya kalian tinggal lihat **langkah 5 untuk enable cortana** atau **langkah 6 untuk disable cortana**
 5. Untuk Enable Cortana kalian pilih **Not Configured** atau **Enabled**
 6. Untuk Disable Cortana kalian pilih **Disabled**
 
-![Local Group Policy Editor](2.png)
+![Local Group Policy Editor](2.webp)
 
 7. Jika sudah, Close **Local Group Policy Editor**
 8. Restart Explorer atau Sign Out & Sign In atau Kalian Restart PC kalian. Untuk menerapkan konfigurasi yang sudah di setting di **Local Group Policy Editor**

@@ -39,14 +39,14 @@ Untuk Microsoft Edge sendiri sudah support **DNS Over HTTPS** di sistem operasi 
 3. On kan **Use Secure DNS** kalian pilih **Choose a service provider** klik kolomnya lalu disana kalian pilih DNS yang kalian pakai
 
 
-![Dns Over HTTPS Microsoft Edge](https://1.bp.blogspot.com/-zPY8bFYsd4o/X_gdY5FerAI/AAAAAAAAC0M/qsrQlQJuyIQcea5chT6TFFjfhCFoOgpnwCLcBGAsYHQ/s1920/doh-edge.jpg)
+![Dns Over HTTPS Microsoft Edge](https://1.bp.blogspot.com/-zPY8bFYsd4o/X_gdY5FerAI/AAAAAAAAC0M/qsrQlQJuyIQcea5chT6TFFjfhCFoOgpnwCLcBGAsYHQ/s1920/doh-edge.webp)
 
 ## Menggunakan DNS Over HTTPS Mozilla Firefox
 Untuk Microsoft Edge sendiri sudah support **DNS Over HTTPS** di sistem operasi Windows, Linux. Untuk mengaktifkannya kalian bisa
 1. Masuk ke bagian **Preferences** (Klik strip 3 dibagian atas kanan lalu pilih Preferences)
 2. Scroll ke paling bawah sampai bagian **Network Settings** dan kalian klik **Settings**
 3. Ceklis **Enable DNS over HTTPS** lalu kalian pilih **Cloudflare** atau **NextDNS**
-![Dns Over HTTPS Firefox](https://1.bp.blogspot.com/-EODEbdBhGds/X_gdzpyYHwI/AAAAAAAAC0U/FJli4jERHV8dwTekdBEcveeMpR_d3uE8wCLcBGAsYHQ/s1920/doh-firefox.jpg)
+![Dns Over HTTPS Firefox](https://1.bp.blogspot.com/-EODEbdBhGds/X_gdzpyYHwI/AAAAAAAAC0U/FJli4jERHV8dwTekdBEcveeMpR_d3uE8wCLcBGAsYHQ/s1920/doh-firefox.webp)
 ## Menggunakan DNS Over HTTPS Andorid 9+
 Untuk Android 9 keatas sudah support **DNS Over HTTPS** atau **Private DNS**. Untuk mengaktifkannya kalian bisa
 1. Buka **Settings** ⇢ **Connections** ⇢ **Cari Private DNS** atau Jika kalian mau lebih cepat kalian search aja **“Private DNS”** dibagian settings
@@ -55,4 +55,4 @@ Untuk Android 9 keatas sudah support **DNS Over HTTPS** atau **Private DNS**. Un
    * **dns.google** untuk DNS Google
    * **1dot1dot1dot1.cloudflare-dns.com** untuk DNS Cloudflare
 4. Jika sudah klik Save, kalian sudah bisa membuka situs yang terblokir
-![Dns Over HTTPS Android](https://1.bp.blogspot.com/-uiWIS2iAzYI/X_gehiS1WgI/AAAAAAAAC0g/pZ6n5ZLJa0I8MSJcunp_T31C85uPxfttACLcBGAsYHQ/s1280/doh-android.jpg)
+![Dns Over HTTPS Android](https://1.bp.blogspot.com/-uiWIS2iAzYI/X_gehiS1WgI/AAAAAAAAC0g/pZ6n5ZLJa0I8MSJcunp_T31C85uPxfttACLcBGAsYHQ/s1280/doh-android.webp)

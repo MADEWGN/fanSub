@@ -17,13 +17,13 @@ Pada tutorial kali ini kita akan melakukan trial reset IDM menjadi 30 hari (sepe
 
 1. *Force Close* IDM terlebih dahulu, dengan mengklik exit di IDM pada bagian *tray icon*
 
-![Klik Exit di Tray Icon](0.jpg)
+![Klik Exit di Tray Icon](0.webp)
 
 2. Kalian buka **registry editor** dengan menekan shortcut **Win + R** pada keyboard lalu isikan **regedit** dan tekan **enter**, Jika muncul *Prompt UAC* kalian klik *Yes*
 
-![Run](1.jpg)
+![Run](1.webp)
 
-![Run](2.jpg)
+![Run](2.webp)
 
 3. Maka akan muncul Window Registry Editor, Navigasikan ke
 ```
@@ -34,13 +34,13 @@ HKEY_USERS
             └── {07999AC3-058B-40BF-984F-69EB1E554CA7} <-- Hapus
 ```
 
-![Registry Editor](3.jpg) ![Registry Editor](4.jpg)
+![Registry Editor](3.webp) ![Registry Editor](4.webp)
 
 Catatan: Pada bagian **S-1-5-21-563298657-3659230254-7856325069-1001_Classes** angka **563298657-3659230254-7856325069** pasti berbeda setiap komputer, jadi jika beda nama key registry nya tidak masalah, yang penting kalian pilih yang ada tulisan **_Classes** nya.
 
 4. Hapus registry key **{07999AC3-058B-40BF-984F-69EB1E554CA7}** dengan cara Klik Kanan -> Delete
 
-![Hapus Key](5.jpg)
+![Hapus Key](5.webp)
 
 5. Tutup Window Registry Editor nya
 6. Buka aplikasi IDM nya.

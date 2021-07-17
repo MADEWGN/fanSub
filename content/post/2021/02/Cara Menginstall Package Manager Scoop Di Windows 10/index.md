@@ -19,7 +19,7 @@ Jika sudah memenuhi syarat diatas, kalian bisa jalankan perintah ini terlebih da
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 ```
 
-![Set-ExecutionPolicy RemoteSigned -scope CurrentUser](2.png)
+![Set-ExecutionPolicy RemoteSigned -scope CurrentUser](2.webp)
 
 Setelah itu kalian ketik `Y` dan `Enter`, lalu copy & paste perintah dibawah ini untuk menginstall scoop
 
@@ -33,7 +33,7 @@ Atau yang lebih pendek
 iwr -useb get.scoop.sh | iex
 ```
 
-![Install Scoop](3.png)
+![Install Scoop](3.webp)
 #### Menginstall Aplikasi
 Sebelum menginstall aplikasi, kalian wajib menginstall `git` terlebih dahulu, dengan perintah
 ```powershell
@@ -44,9 +44,9 @@ Note: Jika kalian butuh `openSSH` kalian bisa install
 scoop install git-with-openssh
 ```
 
-![Install Git OpenSSH](4.png)
+![Install Git OpenSSH](4.webp)
 
-![Install Git OpenSSH](5.png)
+![Install Git OpenSSH](5.webp)
 
 Setelah git nya terinstall kalian **add extras bucket**, agar banyak aplikasi yang bisa di kalian install via scoop, caranya
 
@@ -54,7 +54,7 @@ Setelah git nya terinstall kalian **add extras bucket**, agar banyak aplikasi ya
 scoop bucket add extras
 ```
 
-![Add Bucket](6.png)
+![Add Bucket](6.webp)
 
 Untuk menginstall aplikasi dengan scoop sangat mudah caranya
 1. Kalian buka powershell kalian
@@ -74,7 +74,7 @@ Atau bisa juga disatukan perintahnya
 ```powershell
 scoop install ffmpeg hugo-extended
 ```
-![Install Hugo Extended](7.png)
+![Install Hugo Extended](7.webp)
 #### Update Aplikasi
 Untuk update aplikasi perintahnya
 ```powershell

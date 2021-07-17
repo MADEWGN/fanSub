@@ -15,7 +15,7 @@ Pada kesempatan kali ini saya akan share tutorial Cara Install Transmission BT 3
 sudo add-apt-repository ppa:transmissionbt/ppa -y && sudo apt install transmission-daemon
 ```
 
-![Add ppa dan install transmission](transmission-1.jpg)
+![Add ppa dan install transmission](transmission-1.webp)
 
 2. Setelah terinstall jalankan perintah berikut ini untuk menjalankan trasnmission nya dan agar kita bisa setting config nya
 ```bash
@@ -26,7 +26,7 @@ sudo service transmission-daemon start
 sudo nano /etc/transmission-daemon/settings.json
 ```
 
-![Start transmission dan edit settings.json](transmission-2.jpg)
+![Start transmission dan edit settings.json](transmission-2.webp)
 
 4. Ubah bagian yang kalian perlukan, disini saya hanya mengubah bagian ini saja, setelah selesai edit kalian bisa simpan dengan cara `CTRL + O` `Enter` `CTRL + X` untuk editor `nano`
 ```json
@@ -45,7 +45,7 @@ sudo nano /etc/transmission-daemon/settings.json
 sudo service transmission-daemon reload && sudo service transmission-daemon restart
 ```
 
-![Reload dan restart transmission](transmission-3.jpg)
+![Reload dan restart transmission](transmission-3.webp)
 
 6. Buka web address, disini saja menggunakan local computer jadi ip nya 127.0.0.1 atau localhost, jika kalian menggunakan VPS kalian masukan IP nya
 ```
@@ -55,26 +55,26 @@ http://ip.v.p.s:9091
 ```
 7. Jika berhasil maka akan ada prompt untuk memasukan username & password, dengan catatan di config nya kalian set `"rpc-authentication-required": true`, jika `"rpc-authentication-required": false` maka tidak akan muncul prompt ini
 
-![Prompt username dan password](transmission-4.jpg)
+![Prompt username dan password](transmission-4.webp)
 
 8. Sekarang kalian bisa langsung add torrent file atau magnet link
 
-![Add torrent yang akan kalian download](transmission-5.jpg)
+![Add torrent yang akan kalian download](transmission-5.webp)
 
 9.  Jika pada saat download kalian mendapati error `Permission Denied`, kalian bisa ubah permission `"download-dir": "/home/rmdhnreza/Downloads"` nya dengan cara
 ```bash
 chmod 777 /home/rmdhnreza/Downloads
 ```
 
-![Error permission denied](transmission-6.jpg) ![Ubah permission folder Downloads](transmission-7.jpg)
+![Error permission denied](transmission-6.webp) ![Ubah permission folder Downloads](transmission-7.webp)
 
 10. Add lagi torrent yang kalian download, sudah pasti sekarang tidak akan mendapati error `Permission Denied`
 
-![File torrent sedang di download](transmission-8.jpg)
+![File torrent sedang di download](transmission-8.webp)
 
 11. Jika torrent sudah selesai cek folder download nya
 
-![Torrent berhasil di Download](transmission-10.jpg)
+![Torrent berhasil di Download](transmission-10.webp)
 
 ## Untuk pengguna VPS
 1. Kalian install terlebih dahulu apache2
@@ -91,4 +91,4 @@ sudo ln -s /home/rmdhnreza/Downloads /var/www/html
 ```
 4. Buka di browser `http://ip.v.p.s/Downloads` jika kalian edit port apache2 nya menjadi 5000 (misalnya), maka `http://ip.v.p.s:5000/Downloads`
 
-![Torrent yang berhasil di Download di VPS](transmission-9.jpg)
+![Torrent yang berhasil di Download di VPS](transmission-9.webp)

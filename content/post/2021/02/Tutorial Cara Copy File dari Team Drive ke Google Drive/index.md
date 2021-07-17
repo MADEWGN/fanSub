@@ -28,7 +28,7 @@ rclone config
 ```
 5. Jika tidak muncul error maka bisa langsung lanjut ke langkah selanjutnya
 
-![Tutorial Copy File dari Team Drive ke Google Drive](rcloneconfig.jpg)
+![Tutorial Copy File dari Team Drive ke Google Drive](rcloneconfig.webp)
 
 ## Konfigurasi TeamDrive
 1. Ketikan perintah Lalu Enter
@@ -38,7 +38,7 @@ rclone config
 2. **No remotes found - make a new one** > kalian pilih **n** untuk membuat remote
 3. **name** > kalian buat nama remote kalian bebas, tapi saya sarankan jangan memakai spasi, disini nama remote yang akan saya gunakan **TeamDrive**
 
-![Tutorial Copy File dari Team Drive ke Google Drive](rcloneconfig1.jpg)
+![Tutorial Copy File dari Team Drive ke Google Drive](rcloneconfig1.webp)
 
 4. **Storage** > kalian ketik "**drive**" (tanpa tanda "")
 5. **client_id**, **client_secret**, kalian kosongkan saja
@@ -57,13 +57,13 @@ rclone config
 1. Sama seperti langkah Konfigurasi Team Drive, yang harus dibedakan adalah nama pada langkah nomor 3 disini saya menggunakan nama MainDrive dan Langkah nomor 10 kalian harus pilih **N**
 2. Jika konfigurasi telah selesai kalian ketik q lalu Enter untuk Quit
 
-![Tutorial Copy File dari Team Drive ke Google Drive](rcloneconfig2.jpg)
+![Tutorial Copy File dari Team Drive ke Google Drive](rcloneconfig2.webp)
 
 ## Melakukan copy dari remote TeamDrive ke MainDrive
 1. Yang harus kalian lakukan pertama kali adalah share file (karena Team Drive untuk sekarang tidak bisa share folder) dari akun Team Drive kalian ke akun Google Drive yang akan meng-copy jika kalian tidak melakukan ini maka dipastikan akan error pada saat melakukan copy dengan rclone
 2. Saya akan melakukan copy Video Running Man tahun 2010 di Folder (Perhatikan **PATH** nya) **RunningMan/2010**  ke Folder **2010** di Akun Google Drive
 
-![Tutorial Copy File dari Team Drive ke Google Drive](path.jpg)
+![Tutorial Copy File dari Team Drive ke Google Drive](path.webp)
 
 3. Jika sudah di Share langsung buka cmd, PowerShell atau terminal nya lalu ketikan perintah
 ```bash
@@ -74,11 +74,11 @@ rclone copy --progress --drive-server-side-across-configs NamaRemoteTeamDriveKal
 rclone copy --progress --drive-server-side-across-configs TeamDrive:RunningMan/2010 MainDrive:2010
 ```
 
-![Tutorial Copy File dari Team Drive ke Google Drive](rcloneconfig3.jpg)
+![Tutorial Copy File dari Team Drive ke Google Drive](rcloneconfig3.webp)
 
 5. Jika berhasil maka tidak ada error yang muncul dan kalian akan melihat progress copy filenya
 
-![Tutorial Copy File dari Team Drive ke Google Drive](rcloneconfig4.jpg)
+![Tutorial Copy File dari Team Drive ke Google Drive](rcloneconfig4.webp)
 
 Jika kalian masih kebingungan kalian bisa tanyakan di kolom komentar, bingungnya dibagian mana, sebisa mungkin nanti saya akan bantu
 

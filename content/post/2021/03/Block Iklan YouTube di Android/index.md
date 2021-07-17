@@ -15,15 +15,15 @@ Adanya iklan ketika menonton video YouTube di hp Android menjadi gangguan tersen
 3. Tap "Let's get started" pilih aplikasi yang mau kalian install, apakah mau **YouTube Vanced** saja atau mau install **YouTube Music** juga, Jika Android kalian sudah root, kalian beri permission Vanced Manager nya, jika belum root tinggal Next saja.
    * Setau saya perbedaan root dan tidak root, hanya di penginstallan MICROG nya saja, Android yang sudah root tidak butuh MICROG.  
 
-![Vanced Manager](1.jpg) ![Vanced Manager](4.jpg)  ![Vanced Manager](3.jpg) 
+![Vanced Manager](1.webp) ![Vanced Manager](4.webp)  ![Vanced Manager](3.webp) 
 
 4. Kalian install **VANCED MICROG** terlebih dahulu dengan tap **INSTALL**, lalu buka **VANCED MICROG** nya dan **Add Account**, **Login** dengan akun Google kalian. Jika device kalian HUAWEI, kalian tap dibagian HUAWEI
 
-![Vanced Manager](5.jpg) ![Vanced Manager](6.jpg) ![Vanced Manager](7.jpg) 
+![Vanced Manager](5.webp) ![Vanced Manager](6.webp) ![Vanced Manager](7.webp) 
 
 5. Kembali ke Vanced Manager, sekarang kita install **YOUTUBE VANCED** langsung saja tap **INSTALL**. Disini ada pilihan tema kalian bisa pilih, jika ada pop up kalian klik OK saja
 
-![Vanced Manager](8.jpg) ![Vanced Manager](10.jpg) ![Vanced Manager](9.jpg) 
+![Vanced Manager](8.webp) ![Vanced Manager](10.webp) ![Vanced Manager](9.webp) 
 
 6. **PENTING**, setelah terinstall **YouTube Vanced** nya, **kalian buka aplikasinya terlebih dahulu sebelum UPDATE ke versi terbaru**, jika kalian langsung update, YouTube Vanced nya akan Blank atau Loading terus-menerus.
 7. Setelah kalian buka YouTube Vanced nya, kembali ke Vanced Manager dan tap **UPDATE**, setelah Update sekarang kalian bisa buka YouTube Vanced nya
