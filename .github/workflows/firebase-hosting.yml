@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.4.13
+        uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: latest
           extended: true
@@ -34,3 +34,13 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RMDHNREZA }}'
           channelId: live
           projectId: rmdhnreza
+
+      - name: Ping Sitemap URL
+        uses: atymic/sitemap-ping-action@master
+        with:
+          sitemap-url: "https://rmdhnreza.my.id/sitemap.xml"
+
+      - name: Ping Index URL
+        uses: atymic/sitemap-ping-action@master
+        with:      
+          sitemap-url: "https://rmdhnreza.my.id/index.xml"
