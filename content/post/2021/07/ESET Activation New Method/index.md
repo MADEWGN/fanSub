@@ -49,7 +49,7 @@ for receive ESET keys
 This method requires restarting Desktop/Laptop twice (Disable HIPS and Enable HIPS), and disable ESET main features (HIPS) when applying License.\
 **So I Highly recommended when HIPS disabled, you don’t open crack software, browsing, etc. Until HIPS Enabled again.**
 
-1. Download license.lf and Save it for example in Desktop
+1. Download [license.lf](https://firebasestorage.googleapis.com/v0/b/rmdhnreza.appspot.com/o/Files%2Flicense.lf?alt=media&token=dfec78d3-c830-4aa9-ac1a-4e768a3192ab) and Save it for example in Desktop
 2. Disable HIPS\
     `Setup ->> Advanced Setup ->> HIPS ->> Enable HIPS ->> Switch to Left (Off) ->> Restart Desktop/Laptop.`
 
