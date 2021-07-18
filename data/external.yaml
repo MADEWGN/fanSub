@@ -1,38 +1,5 @@
-# Vibrant:
-#     - src: https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js
-#       integrity: sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=
-#       type: script
-
-PhotoSwipe:
-    - src: https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js
-      integrity: sha512-2R4VJGamBudpzC1NTaSkusXP7QkiUYvEKhpJAxeVCqLDsgW4OqtzorZGpulE3eEA7p++U0ZYmqBwO3m+R2hRjA==
-      type: script
-      defer: true
-
-    - src: https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js
-      integrity: sha512-SxO0cwfxj/QhgX1SgpmUr0U2l5304ezGVhc0AO2YwOQ/C8O67ynyTorMKGjVv1fJnPQgjdxRz6x70MY9r0sKtQ==
-      type: script
-      defer: true
-
-    - src: https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css
-      integrity: sha512-Rck8F2HFBjAQpszOB9Qy+NVLeIy4vUOMB7xrp46edxB3KXs2RxXRguHfrJqNK+vJ+CkfvcGqAKMJTyWYBiBsGA==
-      type: style
-
-    - src: https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css
-      integrity: sha512-yxWNfGm+7EK+hqP2CMJ13hsUNCQfHmOuCuLmOq2+uv/AVQtFAjlAJO8bHzpYGQnBghULqnPuY8NEr7f5exR3Qw==
-      type: style
-
-KaTeX:
-    - src: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css
-      integrity: sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==
-      type: style
-
-    - src: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js
-      integrity: sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==
-      type: script
-      defer: true
-
-    - src: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js
-      integrity: sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==
+ClipboardJS:
+    - src: https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js
+      integrity: sha256-Eb6SfNpZyLYBnrvqg4KFxb6vIRg+pLg9vU5Pv5QTzko=
       type: script
       defer: true

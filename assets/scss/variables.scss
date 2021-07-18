@@ -25,28 +25,34 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --main-top-padding: 50px;
     }
 
-    --body-background: #f7f7f7;
 
-    --accent-color: #34495e;
     --accent-color-darker: #2c3e50;
     --accent-color-text: #fff;
+    --accent-color: #34495e;
+    --body-background: #f7f7f7;
     --body-text-color: #7f7f7f;
-
-    --tag-border-radius: 4px;
-
+    --breadcrumbs-button-text: #000;
+    --breadcrumbs-button: #ECEFF4;
+    --scrollbar-background-color: #ECEFF4;
+    --scrollbar-color: #bbb;
     --section-separation: 40px;
-
-    --scrollbar-thumb: hsl(0, 0%, 85%);
-    --scrollbar-track: var(--body-background);
+    --tag-border-radius: 4px;
+    --scrollbar-thumb: var(--scrollbar-color);
+    --scrollbar-track: var(--scrollbar-color);
 
     &[data-scheme="dark"] {
-        --body-background: #3B3B3B;
-        --accent-color: #ecf0f1;
         --accent-color-darker: #bdc3c7;
         --accent-color-text: #000;
+        --accent-color: #ecf0f1;
+        --body-background: #2E3440;
         --body-text-color: rgba(255, 255, 255, 0.7);
-        --scrollbar-thumb: #ecf0f1;
-        --scrollbar-track: var(--body-background);
+        --breadcrumbs-button-text: #fff;
+        --breadcrumbs-button: #4C566A;
+        --scrollbar-background-color: #4C566A;
+        --scrollbar-color: #434C5E;
+        --scrollbar-thumb: var(--scrollbar-color);
+        --scrollbar-track: var(--scrollbar-color);
+
     }
 }
 
@@ -92,7 +98,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     }
 
     &[data-scheme="dark"] {
-        --card-background: #424242;
+        --card-background: #3B4252;
         --card-background-selected: rgba(255, 255, 255, 0.16);
         --card-text-color-main: rgba(255, 255, 255, 0.9);
         --card-text-color-secondary: rgba(255, 255, 255, 0.7);
